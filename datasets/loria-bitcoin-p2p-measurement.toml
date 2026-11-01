@@ -1,0 +1,40 @@
+name = "Bitcoin P2P network crawler snapshots (LORIA)"
+category = "p2p-network"
+tags = ["p2p", "nodes", "reachable-nodes", "crawler", "user-agents", "geolocation", "mainnet"]
+format = ["json", "csv", "binary"]
+author = "Jean-Philippe Eisenbarth, Thibault Cholez, Olivier Perrin (LORIA, Université de Lorraine, Inria)"
+license = "Not specified (the accompanying papers on Zenodo are CC BY 4.0)"
+description = """
+Per-crawl snapshots of the Bitcoin mainnet network: JSON lists of discovered
+IPv4 nodes (hashed IP, port, services, height), CSV counts of GETADDR responses,
+and JSON exports of reachable nodes with protocol version, user agent,
+geolocation and autonomous system. LORIA researchers collected it with a
+modified bitnodes crawler described in their papers. Useful for studying the
+reachable node population; IPs are hashed and truncated, and IPv6 and Tor nodes
+are absent.
+"""
+
+[[links]]
+type = "repository"
+label = "Crawler (fork of bitnodes)"
+url = "https://github.com/jpeisenbarth/bitnodes"
+
+[[links]]
+type = "website"
+label = "Bitcoin P2P network study"
+url = "https://concordia-btc-p2p.lhs.loria.fr/"
+
+[[links]]
+type = "download"
+label = "dataset.zip (crawl and export directories)"
+url = "https://concordia-btc-p2p.lhs.loria.fr/data/dataset.zip"
+
+[[links]]
+type = "paper"
+label = "An open measurement dataset on the Bitcoin P2P Network (IM 2021)"
+url = "https://zenodo.org/records/5112933"
+
+[[links]]
+type = "paper"
+label = "A Comprehensive Study of the Bitcoin P2P Network (BRAINS 2021)"
+url = "https://zenodo.org/records/5574869"
