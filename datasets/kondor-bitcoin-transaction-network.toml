@@ -1,0 +1,41 @@
+name = "Bitcoin transaction network (Kondor et al.)"
+category = "transactions"
+tags = ["transactions", "addresses", "blocks", "mainnet"]
+format = ["csv", "text"]
+author = "Dániel Kondor, Márton Pósfai, István Csabai and Gábor Vattay (Eötvös Loránd University)"
+license = "CC0 1.0"
+doi = "10.5061/dryad.qz612jmcf"
+description = """
+Tables of the Bitcoin transaction graph with one row per transaction, input,
+output and block, where addresses and transaction hashes are replaced by
+numeric identifiers mapped in separate files, as compressed CSV and plain-text
+tables. Extracted from the blockchain with a modified bitcoind client by
+researchers at Eötvös Loránd University. Useful for network-science studies of
+payment flows and wealth; identifiers differ between releases, so their files
+cannot be mixed.
+"""
+
+[[links]]
+type = "repository"
+label = "dkondor/bitcoin (modified bitcoind used for extraction)"
+url = "https://github.com/dkondor/bitcoin"
+
+[[links]]
+type = "download"
+label = "Dryad record"
+url = "https://datadryad.org/dataset/doi:10.5061/dryad.qz612jmcf"
+
+[[links]]
+type = "paper"
+label = "Do the rich get richer? An empirical analysis of the Bitcoin transaction network (PLoS ONE)"
+url = "https://doi.org/10.1371/journal.pone.0086197"
+
+[[links]]
+type = "paper"
+label = "Inferring the interplay between network structure and market effects in Bitcoin (New J. Phys.)"
+url = "https://doi.org/10.1088/1367-2630/16/12/125003"
+
+[[links]]
+type = "other"
+label = "txedges (tool reading these files)"
+url = "https://github.com/dkondor/txedges"
