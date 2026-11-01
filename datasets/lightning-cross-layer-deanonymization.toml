@@ -1,0 +1,31 @@
+name = "Lightning Network cross-layer deanonymization data"
+category = "lightning"
+tags = ["channels", "nodes", "addresses", "transactions", "topology", "mainnet"]
+format = ["csv", "json"]
+author = "Matteo Romiti, Friedhelm Victor, Pedro Moreno-Sanchez, Peter Sebastian Nordholt, Bernhard Haslhofer, Matteo Maffei (AIT Austrian Institute of Technology, TU Berlin, IMDEA Software Institute, Chainalysis, TU Wien)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.4482107"
+description = """
+A Lightning Network graph snapshot (channels, node public keys, aliases,
+announced addresses, WHOIS data) with the on-chain funding and settlement
+transactions of those channels, address-to-entity cluster mappings and the
+node-to-entity links, as CSV and JSON. The authors collected it from an LND
+node's describegraph output and a GraphSense instance. Useful for studying how
+channels relate to on-chain entities; the links rest on heuristics and the
+graph is a single snapshot.
+"""
+
+[[links]]
+type = "repository"
+label = "lightning_study (analysis notebooks)"
+url = "https://github.com/MatteoRomiti/lightning_study"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/4537187"
+
+[[links]]
+type = "paper"
+label = "Cross-Layer Deanonymization Methods in the Lightning Protocol (FC 2021)"
+url = "https://arxiv.org/abs/2007.00764"
