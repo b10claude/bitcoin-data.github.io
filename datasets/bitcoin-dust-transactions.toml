@@ -1,0 +1,40 @@
+name = "Bitcoin dust transactions"
+category = "transactions"
+tags = ["transactions", "addresses", "dust", "mainnet"]
+format = ["text", "csv"]
+author = "Matteo Loporchio and Damiano Di Francesco Maesa (University of Pisa)"
+license = "CC BY 4.0 (data), not specified (code)"
+doi = "10.5281/zenodo.7696453"
+description = """
+Bitcoin transactions creating or spending dust outputs, one text line per
+transaction with block time, height, fee, size and each input and output as
+address identifier, amount and script type, plus CSV address mappings and
+entity labels. Extracted from the blockchain at the University of Pisa; a
+companion record holds all transactions. Useful for studying dust creation,
+consumption and dust attacks; dust is a fixed satoshi threshold.
+"""
+
+[[links]]
+type = "repository"
+label = "DustAnalysis (analysis code)"
+url = "https://github.com/mloporchio/DustAnalysis"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/7696454"
+
+[[links]]
+type = "download"
+label = "Zenodo record (companion: all transactions)"
+url = "https://zenodo.org/records/18938800"
+
+[[links]]
+type = "paper"
+label = "Is Bitcoin gathering dust? An analysis of low-amount Bitcoin transactions (Applied Network Science)"
+url = "https://doi.org/10.1007/s41109-023-00557-4"
+
+[[links]]
+type = "paper"
+label = "An Analysis of Bitcoin Dust Through Authenticated Queries (Complex Networks 2022)"
+url = "https://doi.org/10.1007/978-3-031-21131-7_39"
