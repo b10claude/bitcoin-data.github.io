@@ -1,0 +1,41 @@
+name = "Dumplings CoinJoin extraction scan"
+category = "transactions"
+tags = ["transactions", "coinjoin", "privacy", "mainnet"]
+format = ["text", "json"]
+author = "Petr Švenda (Masaryk University)"
+license = "CC BY 4.0 (data), not specified (Dumplings code)"
+doi = "10.5281/zenodo.17870024"
+description = """
+CoinJoin transactions of several wallet designs found by the Dumplings
+scanner, one text line per transaction with txid, block hash, block time,
+inputs and outputs, plus curated false positives, missed transactions and a
+JSON txid-to-coordinator map. Produced by the CRoCS group at Masaryk University
+by scanning a Bitcoin Core node with their Dumplings fork. Useful for studying
+CoinJoin volumes and usage; detection is heuristic, so false positives and
+misses occur.
+"""
+
+[[links]]
+type = "repository"
+label = "Dumplings (scanner, crocs-muni fork)"
+url = "https://github.com/crocs-muni/Dumplings"
+
+[[links]]
+type = "repository"
+label = "pets26_coinjoin_analysis (paper artifacts)"
+url = "https://github.com/crocs-muni/pets26_coinjoin_analysis"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/17870025"
+
+[[links]]
+type = "paper"
+label = "CoinJoin ecosystem insights for Wasabi 1.x, Wasabi 2.x and Whirlpool coordinator-based privacy mixers (PoPETs)"
+url = "https://doi.org/10.56553/popets-2026-0061"
+
+[[links]]
+type = "other"
+label = "coinjoin-analysis (processing scripts)"
+url = "https://github.com/crocs-muni/coinjoin-analysis"
