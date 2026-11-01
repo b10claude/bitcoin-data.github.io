@@ -1,0 +1,33 @@
+name = "Bitcoin node OS fingerprints"
+category = "p2p-network"
+tags = ["p2p", "nodes", "reachable-nodes", "operating-systems", "mainnet"]
+format = ["csv"]
+author = "Vinicius Cestari"
+license = "MIT"
+description = """
+Guessed operating systems of reachable Bitcoin nodes, one CSV per scan with a
+row per host giving IP address, port, OS class, confidence and host state.
+The maintainer takes targets from a btcnodes.io snapshot and runs nmap OS
+detection against each host's Bitcoin port, keeping only coarse OS classes.
+Useful for the operating-system mix of reachable nodes; per-host guesses are
+noisy, middleboxes distort fingerprints, and only IPv4 and IPv6 hosts are
+scanned.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/ViniciusCestarii/bitcoin-node-os-fingerprint"
+
+[[links]]
+type = "website"
+url = "https://viniciuscestarii.github.io/bitcoin-node-os-fingerprint"
+
+[[links]]
+type = "download"
+label = "data/ (scan CSVs)"
+url = "https://github.com/ViniciusCestarii/bitcoin-node-os-fingerprint/tree/master/data"
+
+[[links]]
+type = "documentation"
+label = "Limitations"
+url = "https://github.com/ViniciusCestarii/bitcoin-node-os-fingerprint/blob/master/docs/limitations.md"
