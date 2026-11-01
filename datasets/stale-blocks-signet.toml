@@ -1,0 +1,33 @@
+name = "Stale blocks (signet)"
+category = "blocks"
+tags = ["blocks", "headers", "forks", "signet"]
+format = ["csv", "binary"]
+author = "Anthony Towns"
+license = "CC0 1.0 (data), MIT (code)"
+description = """
+Stale block headers and blocks observed on Bitcoin signet, one CSV row per
+block with height, hash and raw header, plus full blocks as binary files where
+available. A fork of the mainnet stale-blocks project; contributors export
+non-active chain tips from a signet Bitcoin Core node's getchaintips RPC with
+the included get-data.py script. Useful for studying forks and stale-block
+rates on signet; listed blocks are not verified to be fully consensus-valid.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/ajtowns/stale-blocks-signet"
+
+[[links]]
+type = "download"
+label = "stale-blocks.csv"
+url = "https://raw.githubusercontent.com/ajtowns/stale-blocks-signet/master/stale-blocks.csv"
+
+[[links]]
+type = "download"
+label = "blocks/ (full blocks)"
+url = "https://github.com/ajtowns/stale-blocks-signet/tree/master/blocks"
+
+[[links]]
+type = "other"
+label = "Mainnet stale-blocks (upstream project)"
+url = "https://github.com/bitcoin-data/stale-blocks"
