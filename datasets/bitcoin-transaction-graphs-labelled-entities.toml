@@ -1,0 +1,31 @@
+name = "Bitcoin transaction graphs: training, labelled entities, and CoinJoins"
+category = "transactions"
+tags = ["transactions", "addresses", "coinjoin", "machine-learning"]
+format = ["csv", "parquet", "json"]
+author = "Hugo Schnoering and Michalis Vazirgiannis (LIX, École Polytechnique)"
+license = "CC BY 4.0 (data), not specified (code)"
+doi = "10.5281/zenodo.22239037"
+description = """
+Address-transaction graphs for machine learning on Bitcoin: training graphs
+with CSV node features, edge features and heuristic clustering labels, plus
+per-transaction subgraphs with known entity labels and CoinJoin subgraphs as
+Parquet tables with JSON metadata. Built by the authors from blockchain data
+and address-clustering heuristics as companion data for a graph neural network
+clustering method. Useful for training and benchmarking address clustering;
+heuristic labels may wrongly merge distinct users.
+"""
+
+[[links]]
+type = "repository"
+label = "btc-graph-hc (code)"
+url = "https://github.com/hugoschnoering2/btc-graph-hc"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/22239038"
+
+[[links]]
+type = "paper"
+label = "Refining Heuristic-Based Bitcoin Address Clustering with Graph Neural Networks (arXiv)"
+url = "https://arxiv.org/abs/2609.01942"
