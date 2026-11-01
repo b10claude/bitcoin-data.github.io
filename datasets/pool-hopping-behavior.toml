@@ -1,0 +1,31 @@
+name = "Pool hopping behaviour of Bitcoin miners"
+category = "mining"
+tags = ["mining", "pools", "coinbase", "addresses", "transactions", "mainnet"]
+format = ["csv", "binary"]
+author = "Natkamon Tovanich, Nicolas Soulié, Nicolas Heulot, Petra Isenberg (IRT SystemX, Université Paris-Saclay, CNRS, Inria)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.4342746"
+description = """
+A monthly panel of mining pools (blocks, hash rate share, payouts, fees, reward
+rules), monthly tables of miner addresses hopping between pools, payout pattern
+statistics, and a block-to-pool attribution table, as CSV files plus one pandas
+pickle. The authors derived it from the blockchain with BlockSci, published
+pool tags and a heuristic tracing payouts from coinbase outputs to miners.
+Useful for studying miner migration; attribution and payout tracing are
+heuristic.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/5813950"
+
+[[links]]
+type = "paper"
+label = "An Empirical Analysis of Pool Hopping Behavior in the Bitcoin Blockchain (IEEE ICBC 2021)"
+url = "https://doi.org/10.1109/ICBC51069.2021.9461118"
+
+[[links]]
+type = "paper"
+label = "Open access version on HAL"
+url = "https://hal.science/hal-03163006"
