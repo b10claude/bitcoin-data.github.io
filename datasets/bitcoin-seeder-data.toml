@@ -1,0 +1,39 @@
+name = "Bitcoin DNS seeder and crawler archive"
+category = "p2p-network"
+tags = ["p2p", "dns-seeds", "crawler", "nodes", "addresses", "mainnet"]
+format = ["jsonl", "text", "csv", "json"]
+author = "Joris Strakeljahn"
+license = "Not specified"
+description = """
+Answers of Bitcoin's mainnet DNS seeds, one JSON line per query with record
+type, status, TTL and returned addresses, plus unmodified seeder and crawler
+dumps archived as gzipped release assets with checksums. GitHub
+Actions query every seed and service-bit subdomain with dig and download each
+operator's published dump. Useful for comparing what bootstrapping nodes are
+told with independent crawler views; answers come from one vantage point, so
+per-seed counts are lower bounds.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/jorisstrakeljahn/bitcoin-seeder-data"
+
+[[links]]
+type = "download"
+label = "data/dns/ (DNS responses, JSONL)"
+url = "https://github.com/jorisstrakeljahn/bitcoin-seeder-data/tree/main/data/dns"
+
+[[links]]
+type = "download"
+label = "Crawler dump releases"
+url = "https://github.com/jorisstrakeljahn/bitcoin-seeder-data/releases"
+
+[[links]]
+type = "download"
+label = "manifest.jsonl (dump checksums)"
+url = "https://raw.githubusercontent.com/jorisstrakeljahn/bitcoin-seeder-data/main/data/dumps/manifest.jsonl"
+
+[[links]]
+type = "documentation"
+label = "SOURCES.md (source table)"
+url = "https://github.com/jorisstrakeljahn/bitcoin-seeder-data/blob/main/SOURCES.md"
