@@ -1,0 +1,34 @@
+name = "Daily blocks mined per entity"
+category = "mining"
+tags = ["mining", "pools", "blocks", "coinbase", "mainnet"]
+format = ["csv"]
+author = "Mary Milad, Christina Ovezik, Dimitris Karakostas and Daniel W. Woods (Blockchain Technology Lab, University of Edinburgh)"
+license = "MIT"
+description = """
+Blocks mined per day by each Bitcoin mining entity, one CSV row per pool or
+unattributed address with a column per day. Compiled by Edinburgh's
+Blockchain Technology Lab from BigQuery block data, attributing blocks to
+pools via coinbase tags and known addresses, for a paper on confidence in
+mining power estimates. Useful for Nakamoto coefficient and pool-share
+analyses; attribution is heuristic, and unmatched addresses count as separate
+entities that may share an operator.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/Blockchain-Technology-Lab/nc-statistical-confidence"
+
+[[links]]
+type = "download"
+label = "bitcoin_daily.csv"
+url = "https://raw.githubusercontent.com/Blockchain-Technology-Lab/nc-statistical-confidence/main/data/bitcoin_daily.csv"
+
+[[links]]
+type = "paper"
+label = "Statistical Confidence in Mining Power Estimates for PoW Blockchains (arXiv)"
+url = "https://arxiv.org/abs/2403.13736"
+
+[[links]]
+type = "paper"
+label = "Published version (CAAW 2024, ACM Web Conference Companion)"
+url = "https://doi.org/10.1145/3589335.3651960"
