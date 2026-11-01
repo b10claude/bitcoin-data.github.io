@@ -1,0 +1,55 @@
+name = "Bitcoin mining evidence from merge-mined chains"
+category = "blocks"
+tags = ["blocks", "headers", "forks", "mining", "coinbase", "consensus", "mainnet"]
+format = ["csv", "json"]
+author = "deadmanoz"
+license = "CC BY 4.0 (data), MIT (code)"
+description = """
+Merge Mining Research publishes Bitcoin parent headers and, where available,
+coinbase data recovered from merge-mined chains such as Namecoin. The datasets
+show which child chains shared a Bitcoin block's proof of work and provide
+evidence for pool attribution. They cover blocks on Bitcoin's active chain,
+stale header candidates and documented consensus-invalid blocks. The checks on
+stale candidates do not establish full-block validity. Merge Mining Monitor
+combines these historical datasets with live observations from Bitcoin Core and
+active child chains.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/deadmanoz/merge-mining-research"
+
+[[links]]
+type = "website"
+label = "Merge Mining Monitor"
+url = "https://mmm.deadmanoz.xyz/"
+
+[[links]]
+type = "download"
+label = "data/validated-stales/ (per-chain stale CSVs)"
+url = "https://github.com/deadmanoz/merge-mining-research/tree/main/data/validated-stales"
+
+[[links]]
+type = "download"
+label = "data/error-blocks/ (consensus-invalid block catalogue)"
+url = "https://github.com/deadmanoz/merge-mining-research/tree/main/data/error-blocks"
+
+[[links]]
+type = "download"
+label = "data/ (all committed datasets)"
+url = "https://github.com/deadmanoz/merge-mining-research/tree/main/data"
+
+[[links]]
+type = "documentation"
+label = "Dataset reference (schemas)"
+url = "https://github.com/deadmanoz/merge-mining-research/blob/main/docs/data-reference.md"
+
+[[links]]
+type = "documentation"
+label = "Data validity contract"
+url = "https://github.com/deadmanoz/merge-mining-research/blob/main/docs/data-validity.md"
+
+[[links]]
+type = "paper"
+label = "Echoes of the Past (Stifter et al., method basis)"
+url = "https://eprint.iacr.org/2018/1134"
