@@ -1,0 +1,31 @@
+name = "Mining pool reward distribution (A Deep Dive into Bitcoin Mining Pools)"
+category = "mining"
+tags = ["mining", "pools", "coinbase", "addresses", "transactions", "mainnet"]
+format = ["json", "csv"]
+author = "Matteo Romiti, Aljosha Judmayer, Alexei Zamyatin, Bernhard Haslhofer (AIT Austrian Institute of Technology, SBA Research, Imperial College London)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.3256312"
+description = """
+Per-block mining pool attributions with coinbase script, payout addresses and
+attributed pool, address-to-cluster mappings, cluster tags, pool member lists
+and raw payout flow graphs for AntPool, BTC.com and ViaBTC, as JSON and CSV in
+a zip archive. The authors derived it from mainnet blockchain data, address
+clustering and pool tag lists from blockchain.info, BTC.com and Blocktrail.
+Useful for studying reward distribution within pools; attributions rest on
+heuristics and third-party tags.
+"""
+
+[[links]]
+type = "repository"
+label = "Deep_Dive_BTC_Mining_Pools (analysis notebooks)"
+url = "https://github.com/MatteoRomiti/Deep_Dive_BTC_Mining_Pools"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/3256313"
+
+[[links]]
+type = "paper"
+label = "A Deep Dive into Bitcoin Mining Pools: An Empirical Analysis of Mining Shares (WEIS 2019)"
+url = "https://arxiv.org/abs/1905.05999"
