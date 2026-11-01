@@ -1,0 +1,36 @@
+name = "ORBITAAL temporal Bitcoin entity transaction graph"
+category = "transactions"
+tags = ["transactions", "addresses", "timestamps", "mainnet"]
+format = ["parquet", "csv"]
+author = "Célestin Coquidé and Rémy Cazabet (LIRIS)"
+license = "CC BY 4.0 (data), not specified (construction scripts)"
+doi = "10.5281/zenodo.10844224"
+description = """
+Entity-level Bitcoin transfers as a temporal graph: a stream graph with one
+Parquet row per entity-to-entity transfer carrying block timestamp and value in
+satoshi and USD, snapshots at several time resolutions, and node tables with
+entity balances and addresses. Built from the blockchain with bitcoin-etl,
+clustering addresses by the common-input heuristic plus WalletExplorer labels.
+Useful for temporal network analysis; the clustering is heuristic and can merge
+unrelated users.
+"""
+
+[[links]]
+type = "repository"
+label = "OrbitaalBuild (construction scripts)"
+url = "https://github.com/ccoquide/OrbitaalBuild"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/12581515"
+
+[[links]]
+type = "documentation"
+label = "orbitaal-readme.md"
+url = "https://zenodo.org/records/12581515/files/orbitaal-readme.md"
+
+[[links]]
+type = "paper"
+label = "ORBITAAL: A Temporal Graph Dataset of Bitcoin Entity-Entity Transactions (arXiv)"
+url = "https://arxiv.org/abs/2408.14147"
