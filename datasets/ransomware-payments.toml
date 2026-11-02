@@ -1,0 +1,36 @@
+name = "Ransomware payments in the Bitcoin ecosystem"
+category = "transactions"
+tags = ["addresses", "transactions", "ransomware", "forensics", "mainnet"]
+format = ["csv"]
+author = "Masarah Paquet-Clouston, Bernhard Haslhofer and Benoit Dupont"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.1238040"
+description = """
+Addresses and payments tied to ransomware families, as CSV tables of per-family
+seed addresses, collector addresses with their multi-input cluster id, and the
+transactions paying them with hash, timestamp and value. Produced by the
+authors on the GraphSense platform, which expands the seed addresses into
+clusters and follows their payments. Useful for estimating ransom revenue per
+family; the figures are a lower bound and the clustering can merge unrelated
+users.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/1238041"
+
+[[links]]
+type = "download"
+label = "ransomware_dataset_04_11_2018.tar.gz"
+url = "https://zenodo.org/records/1238041/files/ransomware_dataset_04_11_2018.tar.gz"
+
+[[links]]
+type = "paper"
+label = "Ransomware payments in the Bitcoin ecosystem (Journal of Cybersecurity)"
+url = "https://doi.org/10.1093/cybsec/tyz003"
+
+[[links]]
+type = "paper"
+label = "Ransomware Payments in the Bitcoin Ecosystem (arXiv preprint)"
+url = "https://arxiv.org/abs/1804.04080"
