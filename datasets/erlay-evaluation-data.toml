@@ -1,0 +1,44 @@
+name = "Erlay evaluation data"
+category = "p2p-network"
+tags = ["p2p", "propagation", "transactions", "topology", "simulation"]
+format = ["text"]
+author = "Gleb Naumenko"
+license = "Not specified"
+description = """
+Lines of whitespace-separated integers, one per simulated node, giving its
+peers and the transactions it lacks under flooding and under Erlay at several
+connection counts. Gleb Naumenko generated them with a Bitcoin simulator as
+the evaluation data behind the Erlay paper, plus inputs for a block relay
+topology inference experiment. Scripts in the repository replay the paper's
+propagation analysis; these are simulator outputs rather than observations of
+the real network.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/naumenkogs/bitcoin_network_analysis"
+
+[[links]]
+type = "download"
+label = "propagation_cmpct_blocks (connectivity and missing-transaction data)"
+url = "https://github.com/naumenkogs/bitcoin_network_analysis/tree/master/propagation_cmpct_blocks"
+
+[[links]]
+type = "download"
+label = "block_relay_topology_inference (connectivity and spy data)"
+url = "https://github.com/naumenkogs/bitcoin_network_analysis/tree/master/block_relay_topology_inference"
+
+[[links]]
+type = "documentation"
+label = "propagation_cmpct_blocks/README.md"
+url = "https://github.com/naumenkogs/bitcoin_network_analysis/blob/master/propagation_cmpct_blocks/README.md"
+
+[[links]]
+type = "paper"
+label = "Bandwidth-Efficient Transaction Relay for Bitcoin (arXiv)"
+url = "https://arxiv.org/abs/1905.10518"
+
+[[links]]
+type = "other"
+label = "Erlay (CCS 2019 proceedings version)"
+url = "https://doi.org/10.1145/3319535.3354237"
