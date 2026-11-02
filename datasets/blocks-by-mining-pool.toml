@@ -1,0 +1,23 @@
+name = "Blocks by mining pool"
+category = "mining"
+tags = ["mining", "pools", "blocks", "coinbase", "mainnet"]
+format = ["csv"]
+author = "Jameson Lopp"
+license = "MIT"
+description = """
+One CSV row per Bitcoin block with its height, hash and the slug of the pool
+that mined it, attributing each block individually rather than listing
+coinbase tags. Labels come from the mempool.space block API, queried by a
+script in the repository that regenerates the rows. Useful for joining pool
+identity onto block-level analyses; attribution follows mempool.space's
+heuristics, and blocks it cannot identify carry the slug unknown.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/jlopp/bitcoin-blocks-by-mining-pool"
+
+[[links]]
+type = "download"
+label = "blocks.csv"
+url = "https://raw.githubusercontent.com/jlopp/bitcoin-blocks-by-mining-pool/master/blocks.csv"
