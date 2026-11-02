@@ -1,0 +1,35 @@
+name = "Geolocated Lightning Network topology snapshots"
+category = "lightning"
+tags = ["topology", "channels", "nodes", "geolocation", "gossip", "mainnet"]
+format = ["text", "csv"]
+author = "Danila Valko, Jorge Marx Gómez (University of Oldenburg)"
+license = "CC BY 4.0"
+doi = "10.7910/DVN/2OAVO6"
+description = """
+Lightning Network graph snapshots as NetworkX GML files, where a node carries
+its public key, alias and city-level geolocation and an edge carries a short
+channel id, fee policy and HTLC limits, plus a CSV summary table. The authors
+rebuilt them from the lnresearch gossip archives and geolocated nodes by IP
+address. Useful for spatial and temporal network analysis; only nodes
+announcing a public IP address are geocoded.
+"""
+
+[[links]]
+type = "repository"
+label = "ln-data-preparation (reconstruction scripts)"
+url = "https://github.com/Ellariel/ln-data-preparation"
+
+[[links]]
+type = "download"
+label = "Harvard Dataverse record"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2OAVO6"
+
+[[links]]
+type = "paper"
+label = "Geolocated Lightning Network topology snapshots (Scientific Data)"
+url = "https://doi.org/10.1038/s41597-025-06413-7"
+
+[[links]]
+type = "other"
+label = "lnresearch/topology (source gossip datasets)"
+url = "https://github.com/lnresearch/topology"
