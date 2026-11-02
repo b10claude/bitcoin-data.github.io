@@ -1,0 +1,33 @@
+name = "Change output ground truth"
+category = "transactions"
+tags = ["transactions", "addresses", "privacy", "mainnet"]
+format = ["csv"]
+author = "Malte Möser and Arvind Narayanan (Princeton University)"
+license = "Not specified"
+description = """
+One CSV row per Bitcoin transaction with a known change output, giving the
+transaction hash and that output's index. Malte Möser and Arvind Narayanan
+derived it from the blockchain by extracting change outputs revealed by the
+multi-input heuristic, as companion data to their address clustering paper.
+It serves as a labelled set for evaluating change detection heuristics, but
+the labels come from a heuristic and inherit its mistakes.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/maltemoeser/address-clustering-data"
+
+[[links]]
+type = "download"
+label = "change-ground-truth.csv"
+url = "https://drive.usercontent.google.com/download?id=1qCj9EP9VlYFhj9PIVt-xGVYMmaWNW-hG&export=download&confirm=t"
+
+[[links]]
+type = "paper"
+label = "Resurrecting Address Clustering in Bitcoin (arXiv)"
+url = "https://arxiv.org/abs/2107.05749"
+
+[[links]]
+type = "other"
+label = "Financial Cryptography 2022 proceedings version"
+url = "https://doi.org/10.1007/978-3-031-18283-9_19"
