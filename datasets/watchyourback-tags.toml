@@ -1,0 +1,39 @@
+name = "WatchYourBack address tags"
+category = "transactions"
+tags = ["addresses", "attribution", "privacy", "channels", "mainnet"]
+format = ["csv"]
+author = "Gibran Gomez, Pedro Moreno-Sanchez and Juan Caballero (IMDEA Software Institute)"
+license = "GPL-3.0; aggregated third-party tags carry their own terms"
+description = """
+One row per Bitcoin address in headerless CSV files, with a currency ticker, a
+category, an owner tag, an optional subtype and a reference URL. Collected by
+the IMDEA Software Institute authors of WatchYourBack, largely by aggregating
+third-party tag sources, explorers and abuse reports. Useful for labelling
+exchange and malware addresses during graph exploration; one file tags
+Lightning channel funding addresses, and tag quality depends on the original
+reporter.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/cybersec-code/watchyourback"
+
+[[links]]
+type = "download"
+label = "data/tagging"
+url = "https://github.com/cybersec-code/watchyourback/tree/main/data/tagging"
+
+[[links]]
+type = "download"
+label = "20220323_ln-opening-channels.tags"
+url = "https://raw.githubusercontent.com/cybersec-code/watchyourback/main/data/tagging/lightningnetwork/20220323_ln-opening-channels.tags"
+
+[[links]]
+type = "paper"
+label = "Watch Your Back: Identifying Cybercrime Financial Relationships in Bitcoin through Back-and-Forth Exploration (CCS 2022)"
+url = "https://doi.org/10.1145/3548606.3560587"
+
+[[links]]
+type = "paper"
+label = "Cybercrime Bitcoin Revenue Estimations: Quantifying the Impact of Methodology and Coverage (CCS 2023)"
+url = "https://doi.org/10.1145/3576915.3623094"
