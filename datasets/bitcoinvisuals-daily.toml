@@ -1,0 +1,28 @@
+name = "BitcoinVisuals daily data"
+category = "transactions"
+tags = ["blocks", "channels", "fees", "mainnet", "mempool", "transactions"]
+format = ["csv"]
+author = "BitcoinVisuals"
+license = "Not specified"
+description = """
+Daily aggregates behind the BitcoinVisuals charts, one CSV row per day with
+columns for blocks, block size and weight, transaction counts, fees, input and
+output values, mempool state, market prices and Lightning Network topology.
+Chain and Lightning columns come from the project's own Bitcoin Core and lnd
+nodes, price columns from third parties. Handy for quick daily time series;
+chain columns are per-block medians or sums, not raw values.
+"""
+
+[[links]]
+type = "website"
+url = "https://bitcoinvisuals.com/"
+
+[[links]]
+type = "download"
+label = "data_daily.csv"
+url = "https://bitcoinvisuals.com/static/data/data_daily.csv"
+
+[[links]]
+type = "documentation"
+label = "Resources page (offers the daily CSV)"
+url = "https://bitcoinvisuals.com/resources"
