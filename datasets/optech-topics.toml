@@ -1,0 +1,43 @@
+name = "Bitcoin Optech topics and newsletters"
+category = "development"
+tags = ["bitcoin-core", "bips", "newsletters", "history"]
+format = ["text"]
+author = "Bitcoin Optech"
+license = "MIT"
+description = """
+One Markdown file per Bitcoin technology topic, with YAML front matter giving
+the title, categories, aliases, primary sources and links to every newsletter
+that mentioned it, plus the newsletter issues themselves. Bitcoin Optech
+contributors maintain them in the repository behind the Optech website, against
+a published topic schema. Useful for mapping protocol topics to the discussions
+that covered them; the content is editorial prose rather than structured
+records.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcoinops/bitcoinops.github.io"
+
+[[links]]
+type = "website"
+url = "https://bitcoinops.org/"
+
+[[links]]
+type = "download"
+label = "_topics/en (topic files with front matter)"
+url = "https://github.com/bitcoinops/bitcoinops.github.io/tree/master/_topics/en"
+
+[[links]]
+type = "download"
+label = "_posts/en/newsletters (newsletter posts)"
+url = "https://github.com/bitcoinops/bitcoinops.github.io/tree/master/_posts/en/newsletters"
+
+[[links]]
+type = "download"
+label = "topics.json (generated topic index)"
+url = "https://bitcoinops.org/topics.json"
+
+[[links]]
+type = "documentation"
+label = "Topic front matter schema"
+url = "https://github.com/bitcoinops/bitcoinops.github.io/blob/master/_data/schemas/topics.yaml"
