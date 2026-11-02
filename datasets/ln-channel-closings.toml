@@ -1,0 +1,28 @@
+name = "Lightning channel closings and closing fees"
+category = "lightning"
+tags = ["channels", "fees", "mainnet", "nodes", "transactions"]
+format = ["csv"]
+author = "newabel"
+license = "MIT (repository); no separate data license stated"
+description = """
+A CSV with one row per closed Lightning channel: short channel id, capacity,
+closing timestamp, a reason code separating mutual from forced closes, the
+closing transaction id, the alias of the owning node and the total on-chain
+fee in satoshis. The author queried the mempool.space API and added the fees
+of the transactions sweeping the closing outputs. Useful for costing close
+types; it covers a few large nodes only.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/newabel/channel_closing_data"
+
+[[links]]
+type = "download"
+label = "data/big_df_fee.csv"
+url = "https://github.com/newabel/channel_closing_data/raw/main/data/big_df_fee.csv"
+
+[[links]]
+type = "documentation"
+label = "data_collection.ipynb (collection notebook)"
+url = "https://github.com/newabel/channel_closing_data/blob/main/data_collection.ipynb"
