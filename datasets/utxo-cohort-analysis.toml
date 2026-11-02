@@ -1,0 +1,30 @@
+name = "Bitcoin blockchain data by cohort analysis"
+category = "transactions"
+tags = ["transactions", "timestamps", "mainnet"]
+format = ["csv"]
+author = "Yulin Liu, Luyao Zhang and Yinhong Zhao (Duke Kunshan University)"
+license = "CC BY 4.0, per the Dataverse terms of use; no license block set"
+doi = "10.7910/DVN/XSZQWP"
+description = """
+CSV tables of daily Bitcoin output cohorts, one row per date with counts of
+unspent outputs bucketed by age and of spent outputs bucketed by lifespan, plus
+metadata tables describing the columns. Computed at Duke Kunshan University by
+querying the transaction input and output history and aggregating it per day.
+Useful for work on holding behaviour without reprocessing the chain; only some
+files cover Bitcoin, the rest cover other coins.
+"""
+
+[[links]]
+type = "repository"
+label = "SciEcon/UTXO (query and analysis code)"
+url = "https://github.com/SciEcon/UTXO"
+
+[[links]]
+type = "download"
+label = "Replication data for: Deciphering Bitcoin Blockchain Data by Cohort Analysis (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XSZQWP"
+
+[[links]]
+type = "paper"
+label = "Deciphering Bitcoin Blockchain Data by Cohort Analysis (Scientific Data)"
+url = "https://doi.org/10.1038/s41597-022-01254-0"
