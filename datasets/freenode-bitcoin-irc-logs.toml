@@ -1,0 +1,33 @@
+name = "Freenode Bitcoin IRC log archive"
+category = "development"
+tags = ["bitcoin-core", "chat-logs", "history", "irc"]
+format = ["text"]
+author = "Bryan Bishop"
+license = "Not specified; message text belongs to the channel participants"
+description = """
+A single compressed archive of early IRC logs from the Freenode channels
+#bitcoin-dev, #bitcoin-core-dev and #bitcoin-otc, one plain text file per
+channel with a tab-separated timestamp, nickname and message on each line.
+Bryan Bishop publishes it together with an OpenTimestamps proof of the
+archive. It covers the years before the daily gnusha.org logs begin; only
+messages are kept, so joins, parts and other channel events are missing.
+"""
+
+[[links]]
+type = "website"
+url = "https://diyhpl.us/~bryan/irc/bitcoin/"
+
+[[links]]
+type = "download"
+label = "bitcoin-logs.2010-2018.tar.bz2 (all three channel logs)"
+url = "https://diyhpl.us/~bryan/irc/bitcoin/bitcoin-logs.2010-2018.tar.bz2"
+
+[[links]]
+type = "download"
+label = "bitcoin-logs.2010-2018.tar.bz2.ots (OpenTimestamps proof)"
+url = "https://diyhpl.us/~bryan/irc/bitcoin/bitcoin-logs.2010-2018.tar.bz2.ots"
+
+[[links]]
+type = "other"
+label = "Daily logs that continue this archive"
+url = "https://gnusha.org/"
