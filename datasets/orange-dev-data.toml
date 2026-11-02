@@ -1,0 +1,48 @@
+name = "Orange Dev data"
+category = "development"
+tags = ["bitcoin-core", "bips", "code-review", "github", "pull-requests", "releases"]
+format = ["parquet", "json"]
+author = "Bitcoin Data Labs"
+license = "CC BY 4.0 (data), BSD-2-Clause (code); quoted third-party text keeps its own terms"
+description = """
+Parquet and JSON on Bitcoin development: a contributor registry with per-person
+commit and review counts, code review network graphs, release and meeting
+summaries, and a cross-reference from pull requests to Optech newsletters.
+Bitcoin Data Labs builds them with a pipeline over git history, GitHub, the BIPs
+repository, the mailing list and Delving Bitcoin. Useful for contributor and
+review metrics; the release and meeting summaries are language-model text, not
+primary records.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcoindatalabs/orange-dev-data"
+
+[[links]]
+type = "website"
+url = "https://bitcoindatalabs.org/"
+
+[[links]]
+type = "download"
+label = "output/ (generated datasets)"
+url = "https://github.com/bitcoindatalabs/orange-dev-data/tree/main/output"
+
+[[links]]
+type = "download"
+label = "registry_contributors.parquet (contributor registry)"
+url = "https://raw.githubusercontent.com/bitcoindatalabs/orange-dev-data/main/output/shared/contributors/registry_contributors.parquet"
+
+[[links]]
+type = "download"
+label = "optech_crossref.json (pull requests mapped to Optech newsletters)"
+url = "https://raw.githubusercontent.com/bitcoindatalabs/orange-dev-data/main/output/shared/optech_crossref.json"
+
+[[links]]
+type = "download"
+label = "network_graph.json (contributor network graph)"
+url = "https://raw.githubusercontent.com/bitcoindatalabs/orange-dev-data/main/output/network/network_graph.json"
+
+[[links]]
+type = "documentation"
+label = "docs/ARCHITECTURE_MASTER.md (pipeline definitions)"
+url = "https://github.com/bitcoindatalabs/orange-dev-data/blob/main/docs/ARCHITECTURE_MASTER.md"
