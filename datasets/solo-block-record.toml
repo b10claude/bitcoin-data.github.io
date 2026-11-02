@@ -1,0 +1,37 @@
+name = "Solo block record"
+category = "mining"
+tags = ["mining", "pools", "blocks", "coinbase", "mainnet"]
+format = ["csv", "json"]
+author = "SoloLuck.io"
+license = "CC BY 4.0"
+description = """
+One row per verified solo-mined block from a small or home miner, with height,
+pool, hardware, hashrate, difficulty, reward, odds and source links, in CSV and
+JSON with a Frictionless datapackage. The repository mirrors the dataset
+SoloLuck.io compiles from miner and press reports, with every block verified on
+chain. Useful for solo mining odds research; rented-hashrate wins are excluded,
+and hashrate and derived odds are empty where unreported.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/sololuckio/solo-block-record"
+
+[[links]]
+type = "website"
+url = "https://sololuck.io/legends"
+
+[[links]]
+type = "download"
+label = "data/blocks.csv"
+url = "https://raw.githubusercontent.com/sololuckio/solo-block-record/main/data/blocks.csv"
+
+[[links]]
+type = "download"
+label = "data/blocks.json"
+url = "https://raw.githubusercontent.com/sololuckio/solo-block-record/main/data/blocks.json"
+
+[[links]]
+type = "documentation"
+label = "datapackage.json"
+url = "https://raw.githubusercontent.com/sololuckio/solo-block-record/main/datapackage.json"
