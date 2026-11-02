@@ -1,0 +1,40 @@
+name = "Bitcoin address-transaction bipartite graph"
+category = "transactions"
+tags = ["transactions", "addresses", "privacy", "mainnet"]
+format = ["text", "binary"]
+author = "Anil Gaihre, Yan Luo, Hang Liu (UMass Lowell)"
+license = "CC BY 4.0"
+description = """
+Bipartite graph of Bitcoin addresses and transactions as a text edge list
+(address, transaction, input/output flag, satoshi value) and as binary CSR
+arrays with a small C++ reader. Built at UMass Lowell by parsing Bitcoin Core
+block files with rusty-blockparser and numbering every address and transaction
+as a vertex. Useful for large-scale analysis of address reuse and anonymity; it
+is a fixed snapshot and vertex numbers are not mapped back to addresses or
+transaction ids.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/4929919"
+
+[[links]]
+type = "download"
+label = "Address-Transaction.dat (text edge list)"
+url = "https://zenodo.org/records/4929919/files/Address-Transaction.dat"
+
+[[links]]
+type = "documentation"
+label = "README.pdf"
+url = "https://zenodo.org/records/4929919/files/README.pdf"
+
+[[links]]
+type = "paper"
+label = "Do Bitcoin Users Really Care About Anonymity? An Analysis of the Bitcoin Transaction Graph (IEEE BigData 2018)"
+url = "https://doi.org/10.1109/BigData.2018.8622442"
+
+[[links]]
+type = "other"
+label = "graph_project_start (graph framework used by the reader)"
+url = "https://github.com/asherliu/graph_project_start"
