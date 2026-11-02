@@ -1,0 +1,33 @@
+name = "Lightning Network gossip timings and graph snapshot (lnconv)"
+category = "lightning"
+tags = ["channels", "gossip", "mainnet", "propagation", "timestamps", "topology"]
+format = ["csv", "json"]
+author = "Niklas Gögge, Elias Rohrer, Florian Tschorsch (TU Berlin)"
+license = "MIT (code); no separate data license stated"
+description = """
+A zstd-compressed CSV with one row per observed Lightning gossip message, its
+type, channel policy fields, origin timestamp and when the collector saw it,
+plus a zstd-compressed lnd describegraph dump as JSON. The authors
+connected to many nodes with pyln-proto and took the graph from their own
+synced LND node. They are the replay input for the authors' gossip simulator,
+and a one-off recording from a single collector.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/dergoegge/lnconv-paper-sim"
+
+[[links]]
+type = "download"
+label = "gossip_latest.csv.zst (message timings)"
+url = "https://github.com/dergoegge/lnconv-paper-sim/raw/main/gossip_latest.csv.zst"
+
+[[links]]
+type = "download"
+label = "lngraph-30102021.json.zst (graph snapshot)"
+url = "https://github.com/dergoegge/lnconv-paper-sim/raw/main/lngraph-30102021.json.zst"
+
+[[links]]
+type = "paper"
+label = "On the Routing Convergence Delay in the Lightning Network"
+url = "https://arxiv.org/abs/2205.12737"
