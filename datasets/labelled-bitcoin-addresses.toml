@@ -1,0 +1,25 @@
+name = "Bitcoin addresses and their categories"
+category = "transactions"
+tags = ["addresses", "machine-learning", "pools", "coinjoin", "mainnet"]
+format = ["csv"]
+author = "Radosław Michalski, Daria Dziubałtowska and Piotr Macek (Wrocław University of Science and Technology)"
+license = "CC0 1.0"
+doi = "10.7910/DVN/KEWU0N"
+description = """
+One CSV row per Bitcoin address with a category label: mining pool, miner,
+CoinJoin-like, gambling, exchange or services. Compiled at Wrocław University
+of Science and Technology from plausible assumptions and third-party labelling
+services, to train and validate supervised classifiers for address types.
+Useful as a label set for address-classification experiments; the labels are
+heuristic ground truth rather than verified attribution, so some are wrong.
+"""
+
+[[links]]
+type = "download"
+label = "addresses-labels.csv (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KEWU0N"
+
+[[links]]
+type = "paper"
+label = "Revealing the Character of Nodes in a Blockchain with Supervised Learning (IEEE Access)"
+url = "https://doi.org/10.1109/ACCESS.2020.3001676"
