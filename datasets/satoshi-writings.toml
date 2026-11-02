@@ -1,0 +1,48 @@
+name = "Satoshi Nakamoto writings corpus"
+category = "development"
+tags = ["forum", "history", "mailing-list"]
+format = ["json"]
+author = "Satoshi Nakamoto Institute"
+license = "AGPL-3.0 (repository); the archived writings belong to their authors"
+description = """
+Structured JSON of Satoshi Nakamoto's emails and forum posts: one record per
+message with sender, subject, timestamp, body text and a link to its original
+source, plus thread indexes and selected quotes. The Satoshi Nakamoto
+Institute collected them from the cryptography and bitcoin-list mailing lists,
+the P2P Foundation forum and bitcointalk. Useful for citing the original
+writings; the files also carry other participants' replies, which a field
+marks apart.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/NakamotoInstitute/nakamotoinstitute.org"
+
+[[links]]
+type = "website"
+url = "https://nakamotoinstitute.org/"
+
+[[links]]
+type = "website"
+label = "The Complete Satoshi"
+url = "https://satoshi.nakamotoinstitute.org/"
+
+[[links]]
+type = "download"
+label = "server/data/ (all corpus JSON files)"
+url = "https://github.com/NakamotoInstitute/nakamotoinstitute.org/tree/master/server/data"
+
+[[links]]
+type = "download"
+label = "emails.json (mailing list messages)"
+url = "https://raw.githubusercontent.com/NakamotoInstitute/nakamotoinstitute.org/master/server/data/emails.json"
+
+[[links]]
+type = "download"
+label = "forum_posts.json (forum posts)"
+url = "https://raw.githubusercontent.com/NakamotoInstitute/nakamotoinstitute.org/master/server/data/forum_posts.json"
+
+[[links]]
+type = "download"
+label = "quotes.json (selected quotes)"
+url = "https://raw.githubusercontent.com/NakamotoInstitute/nakamotoinstitute.org/master/server/data/quotes.json"
