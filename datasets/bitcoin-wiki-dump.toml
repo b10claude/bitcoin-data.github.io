@@ -1,0 +1,38 @@
+name = "en.bitcoin.it wiki dump"
+category = "development"
+tags = ["wiki", "history", "archive"]
+format = ["text", "binary"]
+author = "WikiTeam"
+license = "Not specified by the archive item; en.bitcoin.it publishes its pages under CC BY 3.0"
+description = """
+A MediaWiki XML export of every page of the en.bitcoin.it wiki with its full
+revision history, plus title and image lists and the uploaded images, in one
+7-Zip archive. WikiTeam collected it through the wiki's MediaWiki API and
+uploaded it to the Internet Archive. Useful for studying how Bitcoin
+terminology and documentation were written and revised; it is a one-off capture
+and no newer dump is published.
+"""
+
+[[links]]
+type = "website"
+url = "https://archive.org/details/wiki-enbitcoinit_w"
+
+[[links]]
+type = "download"
+label = "enbitcoinit_w-20140210-wikidump.7z (XML revision history and images)"
+url = "https://archive.org/download/wiki-enbitcoinit_w/enbitcoinit_w-20140210-wikidump.7z"
+
+[[links]]
+type = "documentation"
+label = "WikiTeam dump tools"
+url = "https://github.com/WikiTeam/wikiteam"
+
+[[links]]
+type = "other"
+label = "Archive metadata API for the item"
+url = "https://archive.org/metadata/wiki-enbitcoinit_w"
+
+[[links]]
+type = "other"
+label = "en.bitcoin.it wiki"
+url = "https://en.bitcoin.it/"
