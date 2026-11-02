@@ -1,0 +1,37 @@
+name = "Bitcoin Core IRC meeting summaries"
+category = "development"
+tags = ["bitcoin-core", "history", "meetings", "releases"]
+format = ["text"]
+author = "Bitcoin Core website contributors"
+license = "MIT"
+description = """
+One Markdown file per Bitcoin Core development IRC meeting, with YAML front
+matter and a prose summary of each topic discussed, linking to the raw channel
+log and minutes. Volunteers wrote them from the #bitcoin-core-dev channel logs
+and published them in the Bitcoin Core website repository. Useful for reading
+what the project discussed without parsing IRC logs; summaries exist only for
+the period volunteers wrote them.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcoin-core/bitcoincore.org"
+
+[[links]]
+type = "website"
+url = "https://bitcoincore.org/en/meeting-summaries/"
+
+[[links]]
+type = "download"
+label = "_posts/en/meetings (meeting summary files)"
+url = "https://github.com/bitcoin-core/bitcoincore.org/tree/master/_posts/en/meetings"
+
+[[links]]
+type = "other"
+label = "#bitcoin-core-dev channel logs"
+url = "https://bitcoin.jonasschnelli.ch/ircmeetings/logs/bitcoin-core-dev/"
+
+[[links]]
+type = "other"
+label = "Current IRC meeting schedule"
+url = "https://bitcoincore.org/en/meetings/"
