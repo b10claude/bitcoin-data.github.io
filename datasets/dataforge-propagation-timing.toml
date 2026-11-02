@@ -1,0 +1,29 @@
+name = "Network propagation timing preview (DataForge)"
+category = "p2p-network"
+tags = ["p2p", "propagation", "blocks", "transactions", "fees", "user-agents", "mainnet"]
+format = ["parquet"]
+author = "DataForge (dataforge-labs)"
+license = "ODC-BY 1.0"
+description = """
+Parquet tables of block and transaction propagation timing across Bitcoin and
+several altcoins: one row per block or transaction with a first-seen timestamp,
+an announcement count and delay percentiles, plus per-window relay fee and
+client version tables. DataForge records them from its own nodes' peer
+connections and publishes this repository as a free preview of a paid feed.
+Useful for comparing propagation across chains; timings come
+from a single observation point and carry no per-peer detail.
+"""
+
+[[links]]
+type = "website"
+url = "https://huggingface.co/datasets/dataforge-labs/network-propagation-timing-preview"
+
+[[links]]
+type = "download"
+label = "bitcoin/ Parquet partitions"
+url = "https://huggingface.co/datasets/dataforge-labs/network-propagation-timing-preview/tree/main/bitcoin"
+
+[[links]]
+type = "documentation"
+label = "Dataset card (table and column reference)"
+url = "https://huggingface.co/datasets/dataforge-labs/network-propagation-timing-preview/blob/main/README.md"
