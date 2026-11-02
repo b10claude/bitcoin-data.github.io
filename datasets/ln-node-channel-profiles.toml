@@ -1,0 +1,27 @@
+name = "Lightning Network node and channel profiles (Bitcoin Data Labs)"
+category = "lightning"
+tags = ["nodes", "channels", "topology", "routing", "fees", "mainnet"]
+format = ["parquet", "json"]
+author = "Saurabh Kumar (Bitcoin Data Labs)"
+license = "CC BY 4.0 (data), MIT (scripts)"
+description = """
+Lightning Network profile tables as Parquet, one row per node or per channel,
+with capacity, channel counts, fee policy, funding transaction, feature bits
+and centrality ranks. Bitcoin Data Labs derives them from Lightning gossip and
+publishes them with a full graph JSON, summary JSON snapshots and a curated
+file of node entity and role tags. Useful for ranking and classifying routing
+nodes; the tags and inferred implementation labels are heuristic.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcoindatalabs/lightning-data"
+
+[[links]]
+type = "website"
+url = "https://lightning.bitcoindatalabs.org"
+
+[[links]]
+type = "download"
+label = "data directory"
+url = "https://github.com/bitcoindatalabs/lightning-data/tree/main/data"
