@@ -24,7 +24,7 @@ description = "Datasets about mining pools, hashrate and coinbase data."
 [[categories]]
 id = "development"
 name = "Development"
-description = "Datasets about Bitcoin software development: repositories, issues, pull requests."
+description = "Datasets about Bitcoin software development: repositories, issues, pull requests, and the mailing list, chat and forum archives that record it."
 
 [[categories]]
 id = "lightning"
