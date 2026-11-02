@@ -1,0 +1,35 @@
+name = "Open Bitcoin Metrics"
+category = "blocks"
+tags = ["blocks", "fees", "mining", "transactions", "mainnet"]
+format = ["csv"]
+author = "Diego R. Llanos (Universidad de Valladolid)"
+license = "CC BY 4.0 (data and documentation), MIT (scripts)"
+doi = "10.5281/zenodo.21156870"
+description = """
+Daily Bitcoin on-chain series covering block production, blockspace, fees,
+miner revenue, difficulty, estimated hashrate, supply, UTXO counts and
+coin-age measures like Bitcoin days destroyed and liveliness. Each
+series is a CSV with date, identifier, value and unit, computed from a
+Bitcoin Core full node and a spent-output indexer. Useful for reproducible
+econometric work, since every series ships its definition and the script
+computing it; each archived release is a snapshot.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/diegorllanos/open-bitcoin-metrics"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/21156871"
+
+[[links]]
+type = "download"
+label = "metrics directory"
+url = "https://github.com/diegorllanos/open-bitcoin-metrics/tree/main/metrics"
+
+[[links]]
+type = "paper"
+label = "Open Bitcoin Metrics: Verifiable Full-Node-Derived Bitcoin Time Series for Economic Research (arXiv)"
+url = "https://arxiv.org/abs/2607.03124"
