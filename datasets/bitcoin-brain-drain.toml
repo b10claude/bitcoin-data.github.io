@@ -1,0 +1,25 @@
+name = "The Bitcoin brain drain"
+category = "transactions"
+tags = ["addresses", "transactions", "privacy", "pools", "mainnet"]
+format = ["csv", "text"]
+author = "Marie Vasek, Joseph Bonneau, Ryan Castellucci, Cameron Keith and Tyler Moore (University of Tulsa)"
+license = "CC0 1.0"
+doi = "10.7910/DVN/RZHL3X"
+description = """
+CSV tables covering Bitcoin brain wallets, whose keys come from a password:
+transaction inputs and outputs for drained wallets, a brain wallet master
+table, a block-to-pool mapping and an R analysis script. Built by the authors
+by guessing candidate passwords from word lists and matching the derived
+addresses against the chain. Useful for studying brain wallet use and the
+drainers that empty them; only wallets whose passwords were guessed appear.
+"""
+
+[[links]]
+type = "download"
+label = "Replication data for: The Bitcoin Brain Drain (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RZHL3X"
+
+[[links]]
+type = "paper"
+label = "The Bitcoin Brain Drain: Examining the Use and Abuse of Bitcoin Brain Wallets (FC 2016)"
+url = "https://doi.org/10.1007/978-3-662-54970-4_36"
