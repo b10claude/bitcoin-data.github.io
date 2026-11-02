@@ -1,0 +1,31 @@
+name = "Bitcoin blockchain optimized for machine learning prediction model"
+category = "transactions"
+tags = ["transactions", "fees", "machine-learning", "blocks", "mainnet"]
+format = ["csv", "json"]
+author = "Enrico Tedeschi (UiT The Arctic University of Norway)"
+license = "CC0 1.0"
+doi = "10.18710/8IKVEU"
+description = """
+Separate block and transaction CSV tables, joined on block hash: blocks carry
+size, height and creation time, transactions carry fee, size, broadcast time
+and waiting time until inclusion. Sampled from blockchain.com APIs and a
+Bitcoin Core node by Enrico Tedeschi at UiT for work on predicting which
+transactions miners include. A README documents every column; coverage is
+limited to the sampled monthly windows, and transaction latency can be
+negative.
+"""
+
+[[links]]
+type = "download"
+label = "DataverseNO record"
+url = "https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/8IKVEU"
+
+[[links]]
+type = "documentation"
+label = "00_README.txt"
+url = "https://dataverse.no/api/access/datafile/118279"
+
+[[links]]
+type = "paper"
+label = "On optimizing transaction fees in Bitcoin using AI: investigation on miners inclusion pattern (ACM TOIT)"
+url = "https://doi.org/10.1145/3528669"
