@@ -1,0 +1,35 @@
+name = "Bitcoin UTXO chainstate and transaction tables"
+category = "transactions"
+tags = ["transactions", "blocks", "bitcoin-core", "coinbase", "mainnet"]
+format = ["sqlite", "csv"]
+author = "David Melo, Lil María Rodríguez-Henríquez, Saúl E. Pomares-Hernández and Julio César Pérez-Sansalvador (INAOE)"
+license = "CC0 1.0 (data), MIT (code)"
+doi = "10.7910/DVN/5CNTNF"
+description = """
+The unspent output set as a SQLite table, one row per output with txid, index,
+value, script type, height and coinbase flag, plus a CSV table of one row per
+transaction with sizes, input and output counts and input txids. Extracted at
+INAOE from Bitcoin Core, the output table read from its LevelDB chainstate.
+Useful for storage-scalability work; both tables are fixed snapshots split into
+parts that must be rejoined.
+"""
+
+[[links]]
+type = "repository"
+label = "mech-scal (extraction and scaling code)"
+url = "https://github.com/jdom1824/mech-scal"
+
+[[links]]
+type = "repository"
+label = "Unlocking-UTXO-transactional-patterns (analysis code)"
+url = "https://github.com/jdom1824/Unlocking-UTXO-transactional-patterns"
+
+[[links]]
+type = "download"
+label = "Bitcoin UTXO Chainstate SQLite Database (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5CNTNF"
+
+[[links]]
+type = "download"
+label = "Replication data for: Unlocking blockchain UTXO transactional patterns (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/6V8HRL"
