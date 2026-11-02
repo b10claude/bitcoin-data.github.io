@@ -1,0 +1,33 @@
+name = "Early Lightning Network graph snapshots (LNTopology)"
+category = "lightning"
+tags = ["topology", "channels", "nodes", "geolocation", "mainnet"]
+format = ["json"]
+author = "István András Seres, László Gulyás, Dániel A. Nagy, Péter Burcsi (Eötvös Loránd University)"
+license = "Not specified"
+description = """
+Lightning Network graph dumps in the lnd describegraph JSON layout: each node
+with its public key, alias, announced addresses, reachability flag and
+coarse geolocation, each channel with its funding outpoint, capacity and the
+fee policy of both endpoints. The authors pulled them from the lndexplorer
+graph API for a paper on network topology. These are early snapshots, useful
+for the period before continuous collections; only a few isolated views exist.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/seresistvanandras/LNTopology"
+
+[[links]]
+type = "download"
+label = "graph20190418.json"
+url = "https://raw.githubusercontent.com/seresistvanandras/LNTopology/master/graph20190418.json"
+
+[[links]]
+type = "download"
+label = "graph20190115.json"
+url = "https://raw.githubusercontent.com/seresistvanandras/LNTopology/master/graph20190115.json"
+
+[[links]]
+type = "paper"
+label = "Topological Analysis of Bitcoin's Lightning Network (arXiv)"
+url = "https://arxiv.org/abs/1901.04972"
