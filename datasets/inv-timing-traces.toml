@@ -1,0 +1,25 @@
+name = "Transaction inv timing traces with originator ids"
+category = "p2p-network"
+tags = ["p2p", "transactions", "propagation", "crawler", "timestamps", "mainnet"]
+format = ["csv"]
+author = "David Mödinger and Franz J. Hauck (Ulm University)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.2547395"
+description = """
+Gzip-compressed CSV traces of transaction inv announcements: one row per
+announcement with a millisecond timestamp, a keyed hash of the announcing
+peer's address and the txid. A modified bitcoinj crawler recorded them at Ulm
+University and at cloud hosts in several regions, some runs sharing a key so
+originator ids match across vantage points. Useful for studying relay timing
+and origin inference; an announcing peer is not necessarily the originator.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/2547396"
+
+[[links]]
+type = "download"
+label = "crawler-24.01.2019-10.24-UK-SOUTH.csv.gz"
+url = "https://zenodo.org/records/2547396/files/crawler-24.01.2019-10.24-UK-SOUTH.csv.gz?download=1"
