@@ -1,0 +1,25 @@
+name = "Unconfirmed transaction captures"
+category = "transactions"
+tags = ["addresses", "mainnet", "mempool", "privacy", "transactions"]
+format = ["csv"]
+author = "Kai Wang, Maike Tong, Changhao Wu, Jun Pang, Chen Chen, Xiapu Luo and Weili Han (Fudan University)"
+license = "Not specified"
+description = """
+Unconfirmed Bitcoin transactions observed in a mempool, one line per
+transaction in a daily file with the txid, the decoded transaction and its
+Bitcoin Core mempool entry, including fee, vsize, dependencies and
+replaceability. Collected for a paper on address clustering by patched Bitcoin
+Core nodes in several countries that record transactions as they arrive. Useful
+for studying replaced and never-confirmed transactions; coverage depends on
+what those nodes received.
+"""
+
+[[links]]
+type = "download"
+label = "UnconfirmedTransactions folder on Google Drive"
+url = "https://drive.google.com/drive/folders/1Vc5p9qro8zh6lV6lLqQMB4AtSvdhLjiT"
+
+[[links]]
+type = "paper"
+label = "Exploring Unconfirmed Transactions for Effective Bitcoin Address Clustering (arXiv)"
+url = "https://arxiv.org/abs/2303.01012"
