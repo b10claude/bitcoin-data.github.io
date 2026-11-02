@@ -1,0 +1,29 @@
+name = "Sextortion spam Bitcoin addresses"
+category = "transactions"
+tags = ["addresses", "transactions", "mainnet"]
+format = ["csv"]
+author = "Masarah Paquet-Clouston, Matteo Romiti, Bernhard Haslhofer, Tomas Charvat"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.3515198"
+description = """
+A plain list of Bitcoin addresses, one per line with no header, each demanded
+as payment in a sextortion spam email. Extracted from a corpus of spam messages
+by the authors of the companion paper on sextortion in the Bitcoin ecosystem.
+Useful as ground truth for clustering and extortion-campaign studies; it
+carries addresses only, with no amounts, message text or campaign labels.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/3515199"
+
+[[links]]
+type = "download"
+label = "addresses.csv"
+url = "https://zenodo.org/records/3515199/files/addresses.csv"
+
+[[links]]
+type = "paper"
+label = "Spams meet cryptocurrencies: sextortion in the Bitcoin ecosystem (ACM AFT)"
+url = "https://doi.org/10.1145/3318041.3355466"
