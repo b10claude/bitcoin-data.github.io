@@ -1,0 +1,35 @@
+name = "Bitcoin transaction network (Antulov-Fantulin et al.)"
+category = "transactions"
+tags = ["transactions", "timestamps", "mainnet"]
+format = ["text"]
+author = "Nino Antulov-Fantulin, Dijana Tolic, Matija Piskorec, Zhang Ce and Irena Vodenska (ETH Zurich)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.3571353"
+description = """
+A Bitcoin transaction network edge list, one comma-separated line per transfer
+with integer source and target node ids, a Unix timestamp and an amount in
+bitcoin. Extracted from the blockchain by the authors of a complex-networks
+paper on inferring short-term volatility, archived on Zenodo as one tar
+archive. Useful for temporal network analysis; node ids are opaque, and the
+volatility file named in the record description is missing.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/3571354"
+
+[[links]]
+type = "download"
+label = "BTC-blockchain-data.tar"
+url = "https://zenodo.org/records/3571354/files/BTC-blockchain-data.tar"
+
+[[links]]
+type = "paper"
+label = "Inferring Short-Term Volatility Indicators from the Bitcoin Blockchain (COMPLEX NETWORKS 2018)"
+url = "https://doi.org/10.1007/978-3-030-05414-4_41"
+
+[[links]]
+type = "paper"
+label = "Preprint (arXiv)"
+url = "https://arxiv.org/abs/1809.07856"
