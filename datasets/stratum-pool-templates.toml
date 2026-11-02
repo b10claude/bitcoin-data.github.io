@@ -1,0 +1,28 @@
+name = "Stratum pool templates"
+category = "mining"
+tags = ["mining", "pools", "coinbase", "timestamps", "propagation", "mainnet"]
+format = ["parquet"]
+author = "DataForge (dataforge-labs)"
+license = "ODC-BY"
+description = """
+Stratum mining.notify jobs from pool endpoints, one Parquet row per job with
+observation time, previous block hash, nTime, coinbase, merkle branch count and
+clean-jobs flag. DataForge collects them from endpoints spanning several pool
+operators, with a companion table recording collection windows and failures.
+Useful for studying when pools switch to a new chain tip; the public release
+is a sample from one vantage point, and full merkle branches are absent.
+"""
+
+[[links]]
+type = "website"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mining-pool-templates"
+
+[[links]]
+type = "download"
+label = "bitcoin_mining_pool_jobs Parquet files"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mining-pool-templates/tree/main/bitcoin_mining_pool_jobs"
+
+[[links]]
+type = "documentation"
+label = "Dataset card"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mining-pool-templates/blob/main/README.md"
