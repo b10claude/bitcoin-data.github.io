@@ -1,0 +1,49 @@
+name = "Fee estimates analysis"
+category = "transactions"
+tags = ["fees", "mempool", "transactions", "bitcoin-core", "policy", "mainnet"]
+format = ["json"]
+author = "Abubakar Sadiq Ismail"
+license = "Not specified"
+description = """
+JSON records of fee rate estimates logged every minute by a Bitcoin Core node,
+pairing a mempool-based next-block estimate and estimatesmartfee with
+feerate percentiles of the block mined next. Collected by Abubakar Sadiq Ismail
+from a patched node's trace and debug logs; a separate branch covers several
+block-template forecasters. Useful for scoring estimators against confirmed
+blocks; fee rates are strings in sat/kvB and each branch is a short sample
+from one node's view.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/ismaelsadeeq/fee-estimates-analysis"
+
+[[links]]
+type = "download"
+label = "estimates_with_quartiles.json (mempool estimate vs estimatesmartfee)"
+url = "https://raw.githubusercontent.com/ismaelsadeeq/fee-estimates-analysis/master/estimates_with_quartiles.json"
+
+[[links]]
+type = "download"
+label = "estimates_with_quartiles_with_threshold.json (integer percentiles)"
+url = "https://raw.githubusercontent.com/ismaelsadeeq/fee-estimates-analysis/master/estimates_with_quartiles_with_threshold.json"
+
+[[links]]
+type = "download"
+label = "forcast_output.json (forecaster comparison, forecast-analysis branch)"
+url = "https://raw.githubusercontent.com/ismaelsadeeq/fee-estimates-analysis/forecast-analysis/forcast_output.json"
+
+[[links]]
+type = "documentation"
+label = "Delving Bitcoin: Empirical data analysis of fee rate forecasters"
+url = "https://delvingbitcoin.org/t/empirical-data-analysis-of-fee-rate-forecasters-for-asap-next-block-fee-estimation/1022"
+
+[[links]]
+type = "documentation"
+label = "Delving Bitcoin: Bitcoind policy estimator modes analysis"
+url = "https://delvingbitcoin.org/t/bitcoind-policy-estimator-modes-analysis/964"
+
+[[links]]
+type = "other"
+label = "Bitcoin Core PR #30157 (fee rate forecasters)"
+url = "https://github.com/bitcoin/bitcoin/pull/30157"
