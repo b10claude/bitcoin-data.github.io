@@ -1,0 +1,61 @@
+name = "Unindexed Bitcoin transaction chunks for UTXO output classification"
+category = "transactions"
+tags = ["transactions", "blocks", "bitcoin-core", "mainnet"]
+format = ["csv"]
+author = "David Melo, Saul E. Pomares-Hernandez, Lil María Rodríguez-Henríquez and Julio César Pérez-Sansalvador (INAOE)"
+license = "CC0 1.0"
+doi = "10.7910/DVN/XJWJ0O"
+description = """
+One CSV row per transaction output, giving the transaction id, output index,
+amount, scriptPubKey, block height, transaction size and a storage class label.
+Extracted at INAOE from Bitcoin Core's chainstate for the Mech-Scal storage
+scalability work, which sorts outputs into immutable, low-churn and high-churn
+classes. Useful as input for output classification work; the chunks are a fixed
+snapshot split across several deposits and hold CSV text despite a .bin
+extension.
+"""
+
+[[links]]
+type = "repository"
+label = "mech-scal (classification and storage code)"
+url = "https://github.com/jdom1824/mech-scal"
+
+[[links]]
+type = "download"
+label = "Part 1 of 7, IM chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XJWJ0O"
+
+[[links]]
+type = "download"
+label = "Part 2 of 7, IM chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ONQZNT"
+
+[[links]]
+type = "download"
+label = "Part 3 of 7, IM chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/TNQNVB"
+
+[[links]]
+type = "download"
+label = "Part 4 of 7, IM chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YBPMDC"
+
+[[links]]
+type = "download"
+label = "Part 5 of 7, IM chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/P6MLVC"
+
+[[links]]
+type = "download"
+label = "Part 6 of 7, IM and ML chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/3TOBNR"
+
+[[links]]
+type = "download"
+label = "Part 7 of 7, ML and MH chunks (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YEZABK"
+
+[[links]]
+type = "other"
+label = "Indexed companion: Bitcoin UTXO chainstate SQLite database (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5CNTNF"
