@@ -1,0 +1,44 @@
+name = "GraphSense public TagPacks"
+category = "transactions"
+tags = ["addresses", "attribution", "forensics", "mainnet"]
+format = ["text"]
+author = "Bernhard Haslhofer, Melitta Dragaschnig, Rainer Stütz, Matteo Romiti and Gibran Gomez (GraphSense)"
+license = "MIT"
+description = """
+Attribution tags for cryptoasset addresses as YAML TagPacks: a record gives an
+address a label, category, actor and link to its public source, in a pack with
+creator, confidence and last-modified date. Curated by the GraphSense team
+and contributors, who may submit only tags from public, dereferenceable
+sources, with a separate ActorPack listing real-world entities. Useful as
+ground truth for address clustering; some packs are derived snapshots of
+third-party services.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/graphsense/graphsense-tagpacks"
+
+[[links]]
+type = "download"
+label = "packs/ (TagPacks)"
+url = "https://github.com/graphsense/graphsense-tagpacks/tree/master/packs"
+
+[[links]]
+type = "download"
+label = "actors/graphsense.actorpack.yaml"
+url = "https://raw.githubusercontent.com/graphsense/graphsense-tagpacks/master/actors/graphsense.actorpack.yaml"
+
+[[links]]
+type = "documentation"
+label = "GraphSense TagPacks schema"
+url = "https://github.com/graphsense/graphsense-tagpacks/wiki/GraphSense-TagPacks"
+
+[[links]]
+type = "documentation"
+label = "GraphSense Actors"
+url = "https://github.com/graphsense/graphsense-tagpacks/wiki/GraphSense-Actors"
+
+[[links]]
+type = "paper"
+label = "Safeguarding the evidential value of forensic cryptocurrency investigations (FSI: Digital Investigation)"
+url = "https://doi.org/10.1016/j.fsidi.2019.200902"
