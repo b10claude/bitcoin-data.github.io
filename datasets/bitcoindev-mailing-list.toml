@@ -1,0 +1,33 @@
+name = "bitcoindev mailing list archive"
+category = "development"
+tags = ["bips", "consensus", "history", "mailing-list"]
+format = ["text"]
+author = "gnusha.org"
+license = "Not specified; message text belongs to its email authors"
+description = """
+A public-inbox mirror of the Bitcoin development mailing list, where one git
+commit adds one raw email message with its full headers under a path derived
+from its Message-ID. The mirror covers the list under both its Linux
+Foundation and Google Groups addresses, and the old pipermail permalinks
+redirect to it. Useful for offline search of protocol discussion;
+it is a third-party mirror, not an official archive.
+"""
+
+[[links]]
+type = "repository"
+url = "https://gnusha.org/pi/bitcoindev"
+
+[[links]]
+type = "website"
+label = "Browsable archive"
+url = "https://gnusha.org/pi/bitcoindev/"
+
+[[links]]
+type = "documentation"
+label = "Mirroring instructions (git clone --mirror)"
+url = "https://gnusha.org/pi/bitcoindev/_/text/mirror/"
+
+[[links]]
+type = "other"
+label = "Redirector for old lists.linuxfoundation.org permalinks"
+url = "https://gnusha.org/url"
