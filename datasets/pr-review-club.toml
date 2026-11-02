@@ -1,0 +1,32 @@
+name = "Bitcoin Core PR Review Club meetings"
+category = "development"
+tags = ["bitcoin-core", "pull-requests", "code-review", "irc"]
+format = ["text"]
+author = "Bitcoin Core PR Review Club hosts and contributors"
+license = "Not specified; meeting log text belongs to its speakers"
+description = """
+One Markdown file per review club meeting, with YAML front matter naming the
+reviewed pull request, its author, affected components, the host and the
+reviewed commit. Written by each meeting's host, who prepares the notes and
+questions, followed by the full IRC log pasted inline. Useful for studying
+how Bitcoin Core changes are reviewed and explained; the files are Jekyll
+posts, so Liquid tags and site-relative links need stripping first.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcoin-core-review-club/website"
+
+[[links]]
+type = "website"
+url = "https://bitcoincore.reviews/"
+
+[[links]]
+type = "download"
+label = "_posts"
+url = "https://github.com/bitcoin-core-review-club/website/tree/master/_posts"
+
+[[links]]
+type = "documentation"
+label = "hosting.md"
+url = "https://github.com/bitcoin-core-review-club/website/blob/master/hosting.md"
