@@ -1,0 +1,39 @@
+name = "Node count history and user agent breakdown (Luke Dashjr)"
+category = "p2p-network"
+tags = ["p2p", "nodes", "reachable-nodes", "user-agents", "crawler", "mainnet"]
+format = ["text", "json"]
+author = "Luke Dashjr"
+license = "Not specified"
+description = """
+The data behind Luke Dashjr's node count charts: a plain-text history with one
+line per sample giving a Unix timestamp, the listening node count, the
+estimated unreachable count and counts for selected software and service
+groups. A companion JSON file breaks the same counts down by user agent and
+adds per-service-bit shares. Useful for node population trends; how the
+unreachable estimate is produced is not documented.
+"""
+
+[[links]]
+type = "website"
+label = "Bitcoin Node Count History chart"
+url = "https://luke.dashjr.org/programs/bitcoin/files/charts/historical.html"
+
+[[links]]
+type = "download"
+label = "history.txt"
+url = "https://luke.dashjr.org/programs/bitcoin/files/charts/data/history.txt"
+
+[[links]]
+type = "download"
+label = "uainfo.json"
+url = "https://luke.dashjr.org/programs/bitcoin/files/charts/data/uainfo.json"
+
+[[links]]
+type = "documentation"
+label = "Bitcoin Node Software chart (reads uainfo.json)"
+url = "https://luke.dashjr.org/programs/bitcoin/files/charts/software.html"
+
+[[links]]
+type = "documentation"
+label = "Bitcoin Node Services chart (service bit names)"
+url = "https://luke.dashjr.org/programs/bitcoin/files/charts/services.html"
