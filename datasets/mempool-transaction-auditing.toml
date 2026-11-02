@@ -1,0 +1,33 @@
+name = "Mempool-based transaction auditing recordings"
+category = "p2p-network"
+tags = ["p2p", "mempool", "transactions", "propagation", "timestamps", "mainnet"]
+format = ["csv"]
+author = "Jannik Albrecht and Ghassan Karame (Ruhr University Bochum)"
+license = "CC BY-NC 4.0 (non-commercial use only)"
+description = """
+CSV tables of first-seen times for unconfirmed transactions, one row per
+transaction hash and one column per observing node holding the Unix-second
+timestamp at which it first received that transaction. The authors recorded
+them in the mempools of their own nodes in Europe, the United States and Asia
+for a paper on mempool-based transaction auditing. Useful for studying regional
+relay delay; unobserved transactions are left empty.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/RUB-InfSec/mempool-based-transaction-auditing"
+
+[[links]]
+type = "download"
+label = "bitcoin_recordings.csv (Git LFS)"
+url = "https://media.githubusercontent.com/media/RUB-InfSec/mempool-based-transaction-auditing/main/bitcoin_recordings.csv"
+
+[[links]]
+type = "download"
+label = "bitcoin_recordings_prior_measurement.csv (Git LFS)"
+url = "https://media.githubusercontent.com/media/RUB-InfSec/mempool-based-transaction-auditing/main/bitcoin_recordings_prior_measurement.csv"
+
+[[links]]
+type = "paper"
+label = "On the Effectiveness of Mempool-based Transaction Auditing (arXiv)"
+url = "https://arxiv.org/abs/2601.14996"
