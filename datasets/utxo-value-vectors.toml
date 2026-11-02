@@ -1,0 +1,25 @@
+name = "Bitcoin UTXO value vectors"
+category = "transactions"
+tags = ["transactions", "blocks", "bitcoin-core", "mainnet"]
+format = ["binary", "parquet", "json"]
+author = "Carlos Baquero (Universidade do Porto) and Raquel Menezes"
+license = "CC BY 4.0 (data and outputs), MIT (code)"
+doi = "10.5281/zenodo.22922174"
+description = """
+Per-height archives of the unspent output set: the exact vector of positive
+output values as 64-bit integers, sampled fixed-size output records, and the
+values created and spent in the window of blocks ending at each height.
+Reconstructed by replaying the active chain over Bitcoin Core's RPC for a
+power-law study of UTXO values. Useful for value-distribution work; each
+archive is a snapshot at one height, not a continuous history.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/23018409"
+
+[[links]]
+type = "documentation"
+label = "README.md"
+url = "https://zenodo.org/records/23018409/files/README.md"
