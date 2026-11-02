@@ -1,0 +1,39 @@
+name = "Bitcoin Core P2P traffic breakdown"
+category = "p2p-network"
+tags = ["p2p", "nodes", "bitcoin-core", "mainnet"]
+format = ["csv"]
+author = "virtu"
+license = "MIT"
+description = """
+Hourly and daily estimates of a Bitcoin Core node's TCP/IP traffic as
+bzip2-compressed CSV, split by message type, connection type and peer, plus
+inbound and outbound traffic per peer.observer node. virtu derived them from
+Bitcoin Core's net message tracepoints by adding P2P header and TCP/IP overhead
+to payload sizes, validated against systemd IP accounting. Useful for gauging
+bandwidth savings of proposals such as Erlay; the figures are single-node
+estimates and the per-peer files include peer IP addresses.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/virtu/bitcoind-p2p-traffic"
+
+[[links]]
+type = "download"
+label = "data_daily.csv.bz2 (per peer)"
+url = "https://raw.githubusercontent.com/virtu/bitcoind-p2p-traffic/master/analysis/peer_analysis/data/data_daily.csv.bz2"
+
+[[links]]
+type = "download"
+label = "data_daily.csv.bz2 (per connection type)"
+url = "https://raw.githubusercontent.com/virtu/bitcoind-p2p-traffic/master/analysis/connection_type/data/data_daily.csv.bz2"
+
+[[links]]
+type = "download"
+label = "peer_observer/ (per-node CSV exports)"
+url = "https://github.com/virtu/bitcoind-p2p-traffic/tree/master/analysis/peer_observer"
+
+[[links]]
+type = "documentation"
+label = "Bitcoin node P2P traffic analysis (Delving Bitcoin)"
+url = "https://delvingbitcoin.org/t/bitcoin-node-p2p-traffic-analysis/1490"
