@@ -3,7 +3,7 @@ category = "transactions"
 tags = ["transactions", "coinjoin", "privacy", "mainnet"]
 format = ["text", "json"]
 author = "Petr Švenda (Masaryk University)"
-license = "CC BY 4.0 (data), not specified (Dumplings code)"
+license = "CC BY 4.0 (data), MIT (analysis code); the Dumplings fork states none"
 doi = "10.5281/zenodo.17870024"
 description = """
 CoinJoin transactions of several wallet designs found by the Dumplings
