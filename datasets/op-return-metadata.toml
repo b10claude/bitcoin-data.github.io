@@ -1,0 +1,25 @@
+name = "Bitcoin OP_RETURN metadata"
+category = "transactions"
+tags = ["transactions", "timestamps", "policy", "mainnet"]
+format = ["csv"]
+author = "Massimo Bartoletti and Livio Pompianu (University of Cagliari), Bryn Bellomy"
+license = "CC0 1.0"
+doi = "10.7910/DVN/MOLW81"
+description = """
+One CSV row per transaction carrying an OP_RETURN output, giving the
+transaction hash, its time, the payload and the protocol it is attributed to. Built at the University of
+Cagliari by scanning the blockchain for OP_RETURN scripts and matching them
+against known data-embedding protocols. Useful for studying what is stored on
+chain and by which application; only protocols the authors identified are
+labelled, and the scan covers a fixed prefix of the chain.
+"""
+
+[[links]]
+type = "download"
+label = "OP_RETURN_Data.csv (Harvard Dataverse)"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MOLW81"
+
+[[links]]
+type = "paper"
+label = "An analysis of Bitcoin OP_RETURN metadata (arXiv)"
+url = "https://arxiv.org/abs/1702.01024"
