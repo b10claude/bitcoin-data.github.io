@@ -1,0 +1,44 @@
+name = "bitcointalk.org web crawl"
+category = "development"
+tags = ["forum", "history", "archive"]
+format = ["text"]
+author = "Internet Archive warczone collection"
+license = "Not specified; the crawled forum posts belong to their authors"
+description = """
+WARC files of crawled bitcointalk.org pages, mostly full-thread views of the
+forum, with gzipped CDX indexes mapping each captured URL to its offset in the
+WARC files. It comes from a web crawl of the whole forum, uploaded to the
+Internet Archive's warczone collection. Useful as a bulk capture of early
+Bitcoin discussion; it
+is raw crawled HTML in WARC containers, so extracting readable posts takes
+work.
+"""
+
+[[links]]
+type = "website"
+url = "https://archive.org/details/warc_home-grab-grabs-_bitcointalk_org-all_20171023"
+
+[[links]]
+type = "download"
+label = "WARC segments and CDX indexes (item file listing)"
+url = "https://archive.org/download/warc_home-grab-grabs-_bitcointalk_org-all_20171023"
+
+[[links]]
+type = "download"
+label = "home-grab-grabs-.bitcointalk.org-all-2017-10-23-cc1a24e5-00000.warc.gz (first WARC segment)"
+url = "https://archive.org/download/warc_home-grab-grabs-_bitcointalk_org-all_20171023/home-grab-grabs-.bitcointalk.org-all-2017-10-23-cc1a24e5-00000.warc.gz"
+
+[[links]]
+type = "download"
+label = "warc_home-grab-grabs-_bitcointalk_org-all_20171023.cdx.gz (URL index for the item)"
+url = "https://archive.org/download/warc_home-grab-grabs-_bitcointalk_org-all_20171023/warc_home-grab-grabs-_bitcointalk_org-all_20171023.cdx.gz"
+
+[[links]]
+type = "other"
+label = "Archive metadata API for the item"
+url = "https://archive.org/metadata/warc_home-grab-grabs-_bitcointalk_org-all_20171023"
+
+[[links]]
+type = "other"
+label = "bitcointalk.org forum"
+url = "https://bitcointalk.org/"
