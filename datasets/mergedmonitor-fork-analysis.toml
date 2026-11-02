@@ -1,0 +1,44 @@
+name = "Merged mining fork analysis"
+category = "blocks"
+tags = ["blocks", "forks", "mining", "mainnet"]
+format = ["json", "binary"]
+author = "Nicholas Stifter, Philipp Schindler, Aljosha Judmayer, Alexei Zamyatin, Andreas Kern and Edgar Weippl"
+license = "Not specified"
+description = """
+JSON lists of Bitcoin blocks tagged with merge-mined child chains,
+difficulty epochs, stale blocks recovered from Namecoin merged-mining data, and
+stale block snapshots from fork monitors and explorers. Compiled by
+Stifter et al. for the paper Echoes of the Past from coin clients, the KIT and
+Decker-Wattenhofer monitors and explorer APIs, with a Litecoin counterpart.
+Useful for comparing live fork monitoring with merged-mining stale block
+recovery; the release is partial and large files are tarballs.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/NStifter/mergedmonitor"
+
+[[links]]
+type = "download"
+label = "fork-analysis/ (all data files and notebooks)"
+url = "https://github.com/NStifter/mergedmonitor/tree/main/fork-analysis"
+
+[[links]]
+type = "download"
+label = "mainchain.json (Bitcoin blocks with merge-mined child chains)"
+url = "https://raw.githubusercontent.com/NStifter/mergedmonitor/main/fork-analysis/mainchain.json"
+
+[[links]]
+type = "download"
+label = "mergedmonitor/mergedmonitor.json (stale blocks recovered from merged mining)"
+url = "https://raw.githubusercontent.com/NStifter/mergedmonitor/main/fork-analysis/mergedmonitor/mergedmonitor.json"
+
+[[links]]
+type = "download"
+label = "bitcoin_epochs.json (difficulty epochs)"
+url = "https://raw.githubusercontent.com/NStifter/mergedmonitor/main/fork-analysis/bitcoin_epochs.json"
+
+[[links]]
+type = "paper"
+label = "Echoes of the Past: Recovering Blockchain Metrics From Merged Mining (FC 2019)"
+url = "https://eprint.iacr.org/2018/1134"
