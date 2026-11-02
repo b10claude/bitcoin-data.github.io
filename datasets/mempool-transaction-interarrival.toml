@@ -1,0 +1,36 @@
+name = "Mempool transaction inter-arrival times"
+category = "transactions"
+tags = ["transactions", "mempool", "timestamps", "mainnet"]
+format = ["text"]
+author = "Mohammad Hossein Tabatabaei (University of Oslo)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.18109894"
+description = """
+One tab-separated row per transaction entering a Bitcoin mempool: txid,
+serialized size, input and output counts, their ratio, millisecond arrival
+timestamp and the interval since the previous transaction. Collected by the
+author at the University of Oslo for work on transaction features and synthetic
+workload generation for UTXO-based ledgers. Useful for modelling arrival
+processes and size distributions; the record has no README, so columns are
+interpreted from the header alone, and it reflects a single node's view.
+"""
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/18109895"
+
+[[links]]
+type = "download"
+label = "bitcoin-mempool-062024-interval.tsv"
+url = "https://zenodo.org/records/18109895/files/bitcoin-mempool-062024-interval.tsv"
+
+[[links]]
+type = "paper"
+label = "Transactional feature analysis and synthetic workload generator for UTXO-based DLTs (FGCS)"
+url = "https://doi.org/10.1016/j.future.2026.108472"
+
+[[links]]
+type = "other"
+label = "Companion record: KSD results"
+url = "https://zenodo.org/records/18109732"
