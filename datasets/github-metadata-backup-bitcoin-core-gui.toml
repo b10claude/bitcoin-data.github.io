@@ -5,12 +5,12 @@ format = ["json"]
 author = "0xB10C"
 license = "Not specified; issue and comment text belongs to its GitHub authors"
 description = """
-A backup of all issues, pull requests, reviews and comments of the bitcoin-
-core/gui GitHub repository, where Bitcoin Core GUI changes are developed, one
-JSON file per issue and pull request as returned by the GitHub API. An
-automated job refreshes the backup, and a browsable mirror is rebuilt from it.
-Useful for keeping the development history available independently of GitHub;
-items GitHub hides or that failed to fetch are listed in state.json.
+A backup of all issues, pull requests, reviews and comments of the
+bitcoin-core/gui GitHub repository, where Bitcoin Core GUI changes are
+developed, one JSON file per issue and pull request as returned by the GitHub
+API. An automated job refreshes the backup, and a browsable mirror is rebuilt
+from it. Useful for keeping the development history available independently of
+GitHub; items GitHub hides or that failed to fetch are listed in state.json.
 """
 
 [[links]]

@@ -7,10 +7,10 @@ license = "AGPL 3.0"
 description = """
 Daily time series on the health of Bitcoin's P2P network: reachable nodes by
 network type, unique and long-term reachable node estimates, and the quality
-of addresses served by each DNS seed. Produced by virtu's p2p-metrics-
-exporter, which crawls the network and queries the DNS seeds. Useful for
-tracking node counts and DNS seed quality over time; only listening nodes are
-counted.
+of addresses served by each DNS seed. Produced by virtu's
+p2p-metrics-exporter, which crawls the network and queries the DNS seeds.
+Useful for tracking node counts and DNS seed quality over time; only listening
+nodes are counted.
 """
 
 [[links]]

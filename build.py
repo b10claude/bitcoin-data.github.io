@@ -102,6 +102,14 @@ def load_dataset(path, category_ids):
     if unknown:
         raise EntryError(f"{where}: unknown field(s): {', '.join(sorted(unknown))}")
 
+    for line in str(entry.get("description", "")).splitlines():
+        if line.rstrip().endswith("-"):
+            raise EntryError(
+                f"{where}: a description line ends in a hyphen "
+                f"({line.strip()!r}); lines are joined with a space when rendered, "
+                "so rewrap without splitting the word"
+            )
+
     dataset = {
         "slug": slug,
         "name": require_str(entry, "name", where),
