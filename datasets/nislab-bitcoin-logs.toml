@@ -1,0 +1,44 @@
+name = "Instrumented Bitcoin Core experiment logs (NISLAB)"
+category = "p2p-network"
+tags = ["p2p", "nodes", "bitcoin-core", "blocks", "mempool", "transactions", "mainnet"]
+format = ["text"]
+author = "Muhammad Anas Imtiaz, David Starobinski, Ari Trachtenberg and Nabeel Younis (NISLAB, Boston University)"
+license = "Not specified"
+description = """
+Plain-text event logs from Bitcoin Core nodes patched to record peer-to-peer
+events, each line carrying a human-readable time, a monotonic timestamp and an
+event tag covering compact block arrival and reconstruction, mempool dumps,
+orphan transaction handling and scripted node churn. Boston University's NISLAB
+recorded them for its churn and orphan-transaction papers. Useful for
+replicating those analyses; each git branch is a separate experiment with its
+own layout.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/nislab/bitcoin-logs"
+
+[[links]]
+type = "download"
+label = "tnsm-churn branch (churn experiment logs)"
+url = "https://github.com/nislab/bitcoin-logs/tree/tnsm-churn"
+
+[[links]]
+type = "download"
+label = "tnsm-orphan branch (orphan transaction logs)"
+url = "https://github.com/nislab/bitcoin-logs/tree/tnsm-orphan"
+
+[[links]]
+type = "documentation"
+label = "Log event reference (tnsm-churn README)"
+url = "https://github.com/nislab/bitcoin-logs/blob/tnsm-churn/README.md"
+
+[[links]]
+type = "paper"
+label = "Churn in the Bitcoin Network (IEEE TNSM)"
+url = "https://doi.org/10.1109/TNSM.2021.3050428"
+
+[[links]]
+type = "paper"
+label = "Investigating Orphan Transactions in the Bitcoin Network (IEEE TNSM)"
+url = "https://doi.org/10.1109/TNSM.2021.3056949"
