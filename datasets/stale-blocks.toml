@@ -9,9 +9,9 @@ description = """
 Stale Bitcoin blocks and headers observed on the network, one CSV row per
 block with height, hash and raw header, plus full blocks where available. Node
 operators contribute their chain tips from Bitcoin Core's getchaintips RPC,
-supplemented by fork monitors and block explorer archives. Useful for stale-
-block rates and propagation studies; listed blocks are not verified to be
-fully consensus-valid.
+supplemented by fork monitors and block explorer archives. Useful for
+stale-block rates and propagation studies; listed blocks are not verified to
+be fully consensus-valid.
 """
 
 [[links]]
