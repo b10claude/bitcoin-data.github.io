@@ -1,0 +1,29 @@
+name = "Mempool cluster linearization artefacts"
+category = "transactions"
+tags = ["transactions", "mempool", "fees", "policy", "mainnet"]
+format = ["text"]
+author = "Arman Mollakhani, Pieter Wuille and Dongning Guo"
+license = "Not specified (data), MIT per source file headers (code)"
+description = """
+Bitcoin transaction clusters, one hex-serialised cluster per line of a
+compressed text file, with each transaction's fee, size and dependencies. One
+set comes from replaying recorded Bitcoin network traffic through a
+cluster-mempool build of Bitcoin Core; the rest are randomly generated tree,
+medium-density and bipartite clusters. Benchmark code and result logs are
+included; the replayed clusters follow the build's cluster limits, not those
+enforced when the traffic was recorded.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/sipa/bitcoin_mempool_linearization_artefacts"
+
+[[links]]
+type = "download"
+label = "clusters_sim2023.zst"
+url = "https://raw.githubusercontent.com/sipa/bitcoin_mempool_linearization_artefacts/main/clusters_sim2023.zst"
+
+[[links]]
+type = "paper"
+label = "Bitcoin Mempool Linearization (arXiv)"
+url = "https://arxiv.org/abs/2607.23787"
