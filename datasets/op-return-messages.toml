@@ -1,0 +1,25 @@
+name = "Bitcoin transaction OP_RETURN messages"
+category = "transactions"
+tags = ["op-return", "transactions", "policy", "mainnet"]
+format = ["text"]
+author = "Zening Zhao, Jinsong Wang (Tianjin University of Technology)"
+license = "CC BY 4.0"
+doi = "10.17632/3gnx8b53x8.1"
+description = """
+One row per OP_RETURN output: its script in assembly, hex and ASCII, its index
+and value, and the transaction and block it sits in. Extracted from the
+blockchain by the authors at Tianjin University of Technology and published as
+a SQL Server dump. Useful for studying data embedded in Bitcoin; the input
+value column is empty, leaving fees negative, and the dump covers fewer blocks
+than the record claims.
+"""
+
+[[links]]
+type = "download"
+label = "Mendeley Data record"
+url = "https://data.mendeley.com/datasets/3gnx8b53x8/1"
+
+[[links]]
+type = "download"
+label = "BitcoinPartialMessage.sql"
+url = "https://data.mendeley.com/public-files/datasets/3gnx8b53x8/files/5062f8d5-83cb-48e2-887c-5179d0ab81f3/file_downloaded"
