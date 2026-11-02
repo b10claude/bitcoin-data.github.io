@@ -1,0 +1,24 @@
+name = "Bitcoin transactions from 2009 to 2020"
+category = "transactions"
+tags = ["addresses", "mainnet", "transactions"]
+format = ["csv"]
+author = "Ethan Wood (University College London)"
+license = "CC0 1.0"
+doi = "10.7910/DVN/ZLBYTZ"
+description = """
+Bitcoin value transfers, one row per sender and recipient pair with a Unix
+timestamp, the sending address, the receiving address and the amount in
+satoshi. Deposited on Harvard Dataverse as CSV files split by calendar month,
+some also served as tab-separated tables. A simple starting point for
+transaction-graph work, but the deposit does not document how the transfers
+were extracted, so their exact semantics are unclear.
+"""
+
+[[links]]
+type = "website"
+url = "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZLBYTZ"
+
+[[links]]
+type = "download"
+label = "All files (ZIP)"
+url = "https://dataverse.harvard.edu/api/access/dataset/:persistentId/?persistentId=doi:10.7910/DVN/ZLBYTZ"
