@@ -1,0 +1,32 @@
+name = "Lightning channel graph snapshot (MPP simulator)"
+category = "lightning"
+tags = ["channels", "mainnet", "nodes", "routing", "topology"]
+format = ["json"]
+author = "Charmaine Ndolo and Florian Tschorsch"
+license = "MIT (repository); no separate data license stated"
+description = """
+One JSON snapshot of the public Lightning channel graph in lnd describegraph
+shape: announced nodes with alias, addresses and feature bits, and channels
+with capacity, funding outpoint and both directional policies. The authors
+committed it to their multi-path payment simulator, whose parser also reads
+graphs from the lnresearch topology dataset. It is handy as ready-made
+simulator input, but a single snapshot without unannounced nodes or channels.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/tud-dud/lightning-mpp-simulator"
+
+[[links]]
+type = "website"
+url = "https://tud-dud.github.io/lightning-mpp-simulator/"
+
+[[links]]
+type = "download"
+label = "snapshots/2023-05-16.tar.gz"
+url = "https://github.com/tud-dud/lightning-mpp-simulator/raw/main/snapshots/2023-05-16.tar.gz"
+
+[[links]]
+type = "paper"
+label = "On the (Not So) Surprising Impact of Multi-Path Payments (CBT 2023)"
+url = "https://eprint.iacr.org/2023/1624"
