@@ -1,0 +1,40 @@
+name = "BitcoinTemporalGraph"
+category = "transactions"
+tags = ["transactions", "addresses", "timestamps", "machine-learning", "mainnet"]
+format = ["binary", "csv"]
+author = "Hugo Schnoering and Michalis Vazirgiannis (LIX, École Polytechnique)"
+license = "CC BY 4.0"
+doi = "10.6084/m9.figshare.26305093"
+description = """
+A temporal directed graph of value transfers between clustered Bitcoin entities
+as a PostgreSQL dump, with per-entity degree, amount and cluster statistics and
+per-pair transfer counts and block heights. Built by the authors from the
+blockchain with address clustering and published alongside graph-learning
+baselines. A companion CSV labels addresses with an entity name and type, but
+those labels are scraped from forum posts and are weaker than the graph.
+"""
+
+[[links]]
+type = "repository"
+label = "BTCGraphConstruction (graph construction code)"
+url = "https://github.com/hugoschnoering2/BTCGraphConstruction"
+
+[[links]]
+type = "repository"
+label = "BitcoinTalkScrapper (address label collection)"
+url = "https://github.com/hugoschnoering2/BitcoinTalkScrapper"
+
+[[links]]
+type = "download"
+label = "figshare record (dataset.tar.gz, addresses.csv)"
+url = "https://figshare.com/articles/dataset/BitcoinTemporalGraph/26305093"
+
+[[links]]
+type = "paper"
+label = "Bitcoin research with a transaction graph dataset (Scientific Data)"
+url = "https://doi.org/10.1038/s41597-025-04684-8"
+
+[[links]]
+type = "other"
+label = "Related dataset: Bitcoin transaction graphs with labelled entities (Zenodo)"
+url = "https://doi.org/10.5281/zenodo.22239037"
