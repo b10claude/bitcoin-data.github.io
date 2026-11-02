@@ -1,0 +1,56 @@
+name = "Transaction ordering corpus"
+category = "transactions"
+tags = ["transactions", "blocks", "mining", "pools", "fees", "mainnet"]
+format = ["csv"]
+author = "Johnnatan Messias, Mohamed Alzayat, Balakrishnan Chandrasekaran, Krishna P. Gummadi, Patrick Loiseau and Alan Mislove (MPI-SWS)"
+license = "Not specified"
+description = """
+One semicolon-separated CSV row per mined transaction with its inferred mining
+pool, position in the block, fee, feerate, child-pays-for-parent flag and
+pre-joined input values, plus block and miner tables. Researchers at MPI-SWS built it from a full node,
+resolving spent inputs and inferring each block's miner. It suits studies of transaction ordering and fee
+behaviour, but miner labels and the CPFP flag are inferred, not chain facts.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/johnnatan-messias/blockchain-transaction-ordering"
+
+[[links]]
+type = "website"
+url = "https://blockchain.mpi-sws.org/datasets/"
+
+[[links]]
+type = "download"
+label = "blocks_500000_664000.csv.gz"
+url = "https://blockchain.mpi-sws.org/datasets/files/bitcoin/blocks_500000_664000.csv.gz"
+
+[[links]]
+type = "download"
+label = "miners_500000_664000.csv.gz"
+url = "https://blockchain.mpi-sws.org/datasets/files/bitcoin/miners_500000_664000.csv.gz"
+
+[[links]]
+type = "download"
+label = "txs-501951--502450.csv.gz (one transaction chunk)"
+url = "https://blockchain.mpi-sws.org/datasets/files/bitcoin/transactions/txs-501951--502450.csv.gz"
+
+[[links]]
+type = "documentation"
+label = "docs/bitcoin.md (column descriptions)"
+url = "https://github.com/johnnatan-messias/blockchain-transaction-ordering/blob/master/docs/bitcoin.md"
+
+[[links]]
+type = "paper"
+label = "Selfish & Opaque Transaction Ordering in the Bitcoin Blockchain (IMC 2021)"
+url = "https://doi.org/10.1145/3487552.3487823"
+
+[[links]]
+type = "paper"
+label = "Dissecting Bitcoin and Ethereum Transactions (FC 2023)"
+url = "https://doi.org/10.1007/978-3-031-47751-5_13"
+
+[[links]]
+type = "other"
+label = "Machine-readable file index (scan.php)"
+url = "https://blockchain.mpi-sws.org/datasets/scan.php"
