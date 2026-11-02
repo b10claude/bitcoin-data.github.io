@@ -1,0 +1,35 @@
+name = "Bitcoin transactions (full transaction list)"
+category = "transactions"
+tags = ["transactions", "addresses", "mainnet"]
+format = ["text", "csv"]
+author = "Matteo Loporchio and Damiano Di Francesco Maesa (University of Pisa)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.18938799"
+description = """
+All Bitcoin transactions up to a given block height, one compressed text line
+per transaction with block time, height, fee, size and each input and output as
+a numeric identifier, amount and script type. Extracted at the University of
+Pisa as the full-chain companion of the authors' dust record. Useful for
+whole-chain graph and clustering analysis; compressed CSV maps are needed to
+resolve identifiers to addresses and transaction hashes.
+"""
+
+[[links]]
+type = "repository"
+label = "BitcoinGraphModels (analysis code using this data)"
+url = "https://github.com/mloporchio/BitcoinGraphModels"
+
+[[links]]
+type = "download"
+label = "Zenodo record"
+url = "https://zenodo.org/records/18938800"
+
+[[links]]
+type = "download"
+label = "tx_list.txt.xz"
+url = "https://zenodo.org/records/18938800/files/tx_list.txt.xz"
+
+[[links]]
+type = "other"
+label = "Zenodo record (companion: dust transactions)"
+url = "https://zenodo.org/records/7696454"
