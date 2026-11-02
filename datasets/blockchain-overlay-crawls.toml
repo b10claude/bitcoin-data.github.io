@@ -1,0 +1,40 @@
+name = "Blockchain overlay known-peer crawls"
+category = "p2p-network"
+tags = ["p2p", "topology", "crawler", "addresses", "gossip", "mainnet"]
+format = ["text"]
+author = "Aristodemos Paphitis, Nicolas Kourtellis and Michael Sirivianos (Cyprus University of Technology, Telefonica Research)"
+license = "CC BY 4.0"
+doi = "10.6084/m9.figshare.23522919"
+description = """
+Edge lists of the known-peer graphs of several cryptocurrency networks,
+including Bitcoin: one file per crawl snapshot, one line per node listing the
+ids of the peers it reported. Researchers at Cyprus University of Technology
+and Telefonica built them by asking every reachable node for its addresses.
+Useful for studying overlay topology and partitioning attacks; the edges are
+potential connections and IP addresses are replaced by ids.
+"""
+
+[[links]]
+type = "website"
+label = "figshare record"
+url = "https://doi.org/10.6084/m9.figshare.23522919"
+
+[[links]]
+type = "download"
+label = "dataset.7z (edge list snapshots)"
+url = "https://ndownloader.figshare.com/files/41289018"
+
+[[links]]
+type = "documentation"
+label = "Readme.md (file format)"
+url = "https://ndownloader.figshare.com/files/41253663"
+
+[[links]]
+type = "paper"
+label = "A First Look into the Structural Properties and Resilience of Blockchain Overlays (arXiv)"
+url = "https://arxiv.org/abs/2104.03044"
+
+[[links]]
+type = "paper"
+label = "Resilience of Blockchain Overlay Networks (NSS 2023)"
+url = "https://doi.org/10.1007/978-3-031-39828-5_6"
