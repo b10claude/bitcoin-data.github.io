@@ -1,0 +1,33 @@
+name = "Mempool snapshots and accelerator prices"
+category = "transactions"
+tags = ["mempool", "transactions", "fees", "pools", "mainnet"]
+format = ["csv", "json"]
+author = "Johnnatan Messias, Vabuk Pahari, Balakrishnan Chandrasekaran, Krishna P. Gummadi and Patrick Loiseau (MPI-SWS)"
+license = "Not specified"
+description = """
+One row per unconfirmed transaction in a full mempool dump, with fee, size,
+ancestor and descendant fields and dependencies, plus accelerator price quotes
+for those ids. Researchers at MPI-SWS dumped getrawmempool from
+their node and queried a mining pool's acceleration service. Accelerator prices cannot be reconstructed from chain data, making
+this a rare record of what such services charge; coverage is limited to a
+single provider.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/johnnatan-messias/blockchain-transaction-ordering"
+
+[[links]]
+type = "download"
+label = "notebook/data (mempool dump and accelerator prices)"
+url = "https://github.com/johnnatan-messias/blockchain-transaction-ordering/tree/master/notebook/data"
+
+[[links]]
+type = "download"
+label = "transaction-acceleration/dataset (per-snapshot selected transactions)"
+url = "https://github.com/johnnatan-messias/blockchain-transaction-ordering/tree/master/transaction-acceleration/dataset"
+
+[[links]]
+type = "paper"
+label = "Dissecting Bitcoin and Ethereum Transactions (FC 2023)"
+url = "https://doi.org/10.1007/978-3-031-47751-5_13"
