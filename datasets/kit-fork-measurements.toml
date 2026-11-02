@@ -1,0 +1,34 @@
+name = "Bitcoin blockchain fork measurements (KIT DSN)"
+category = "blocks"
+tags = ["blocks", "forks", "propagation", "mining", "timestamps", "mainnet"]
+format = ["text"]
+author = "Till Neudecker and Hannes Hartenstein (DSN research group, KASTEL, KIT)"
+license = "CC BY 4.0"
+description = """
+Observed blockchain forks as plain-text tables, one row per fork with the
+height, the reception times of the main-chain and orphaned block, their delay,
+how many peers announced the earlier one, and each block's inferred miner.
+Recorded by KIT's Bitcoin monitoring nodes, with a per-block file listing each
+peer announcement of the competing blocks. Useful for studying fork resolution
+and miner advantage; miner labels come from a block explorer.
+"""
+
+[[links]]
+type = "website"
+label = "Bitcoin fork data"
+url = "https://www.dsn.kastel.kit.edu/bitcoin/forks/"
+
+[[links]]
+type = "download"
+label = "forks.gpd"
+url = "https://www.dsn.kastel.kit.edu/bitcoin/forks/forks.gpd"
+
+[[links]]
+type = "download"
+label = "singleforks/ (per-block propagation)"
+url = "https://www.dsn.kastel.kit.edu/bitcoin/forks/singleforks"
+
+[[links]]
+type = "paper"
+label = "Short Paper: An Empirical Analysis of Blockchain Forks in Bitcoin (FC 2019 workshops)"
+url = "https://doi.org/10.1007/978-3-030-32101-7_6"
