@@ -1,0 +1,40 @@
+name = "Transaction graph dataset for the Bitcoin blockchain"
+category = "transactions"
+tags = ["transactions", "addresses", "blocks", "timestamps", "mainnet"]
+format = ["text"]
+author = "Can Özturan, Alper Şen and Baran Kılıç (Bogazici University)"
+license = "CC BY 4.0"
+doi = "10.5281/zenodo.7157355"
+description = """
+Bitcoin transfers as graph edges, one text line per transfer with a BTC-IN or
+BTC-OUT marker, block number, position in the block, source, destination and
+amount, plus a file mapping block numbers to timestamps. Extracted from the
+mainnet blockchain at Bogazici University for work on fraud detection in
+transaction graphs. Useful for large-scale graph analysis; the block ranges are
+split across several Zenodo records of bzip2 archives fetched separately.
+"""
+
+[[links]]
+type = "download"
+label = "Part 1 of 4 (Zenodo)"
+url = "https://zenodo.org/records/7157356"
+
+[[links]]
+type = "download"
+label = "Part 2 of 4 (Zenodo)"
+url = "https://zenodo.org/records/7157854"
+
+[[links]]
+type = "download"
+label = "Part 3 of 4 (Zenodo)"
+url = "https://zenodo.org/records/7158133"
+
+[[links]]
+type = "download"
+label = "Part 4 of 4 (Zenodo)"
+url = "https://zenodo.org/records/7158328"
+
+[[links]]
+type = "paper"
+label = "Analyzing Large-Scale Blockchain Transaction Graphs for Fraudulent Activities (Springer)"
+url = "https://link.springer.com/chapter/10.1007/978-3-030-94590-9_14"
