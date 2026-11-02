@@ -1,0 +1,38 @@
+name = "gnusha.org Bitcoin development IRC logs"
+category = "development"
+tags = ["bitcoin-core", "chat-logs", "history", "irc"]
+format = ["text"]
+author = "gnusha.org"
+license = "Not specified; message text belongs to the channel participants"
+description = """
+Daily plain text logs of the IRC channels used for Bitcoin Core, Lightning and
+protocol development, one file per channel per day in irssi format with one
+line per message, join, part or topic change. A logging client sits in the
+channels and the files are served as plain directory listings. Useful
+for tracing how a change was discussed; much of the traffic comes from
+notification bots.
+"""
+
+[[links]]
+type = "website"
+url = "https://gnusha.org/"
+
+[[links]]
+type = "download"
+label = "bitcoin-core-dev/ (daily logs)"
+url = "https://gnusha.org/bitcoin-core-dev/"
+
+[[links]]
+type = "download"
+label = "bitcoin-wizards/ (daily logs)"
+url = "https://gnusha.org/bitcoin-wizards/"
+
+[[links]]
+type = "download"
+label = "lightning-dev/ (daily logs)"
+url = "https://gnusha.org/lightning-dev/"
+
+[[links]]
+type = "download"
+label = "bitcoin-core-pr-reviews/ (daily logs)"
+url = "https://gnusha.org/bitcoin-core-pr-reviews/"
