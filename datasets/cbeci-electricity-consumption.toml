@@ -1,0 +1,29 @@
+name = "Cambridge Bitcoin Electricity Consumption Index"
+category = "mining"
+tags = ["mining", "energy", "mainnet"]
+format = ["csv"]
+author = "Cambridge Centre for Alternative Finance (Cambridge Judge Business School)"
+license = "CC BY-NC-SA 4.0"
+description = """
+One row per day in a CSV, with a Unix timestamp and lower-bound, upper-bound
+and best-guess estimates of the Bitcoin network's annualised electricity
+consumption in terawatt-hours. Modelled by the Cambridge Centre for
+Alternative Finance from hashrate and a profitability-weighted mix of
+hardware efficiencies. The site plots the same model as power demand in
+gigawatts; the figures rest on assumptions about hardware mix and data-centre
+overhead, and are estimates, not measurements.
+"""
+
+[[links]]
+type = "website"
+url = "https://ccaf.io/cbnsi/cbeci"
+
+[[links]]
+type = "download"
+label = "export.csv"
+url = "https://ccaf.io/cbeci/api/csv"
+
+[[links]]
+type = "documentation"
+label = "CBECI methodology"
+url = "https://ccaf.io/cbnsi/cbeci/methodology"
