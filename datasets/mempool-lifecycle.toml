@@ -1,0 +1,29 @@
+name = "Bitcoin mempool transaction lifecycle"
+category = "transactions"
+tags = ["mempool", "transactions", "fees", "propagation", "mainnet"]
+format = ["parquet"]
+author = "DataForge (dataforge-labs)"
+license = "ODC-BY 1.0"
+description = """
+One Parquet row per observed transaction with first-seen time, time pending,
+fee rate, ancestor package fields and an outcome of confirmed, dropped or
+unresolved, plus tables comparing pending sets across providers and summarising
+block composition. A collector polls several mempool providers and records each
+transaction until it confirms or disappears. Useful for fee and
+confirmation-time modelling; the public release is a sample window and fee
+fields are often missing.
+"""
+
+[[links]]
+type = "website"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mempool-lifecycle"
+
+[[links]]
+type = "download"
+label = "bitcoin_transaction_lifecycle Parquet files"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mempool-lifecycle/tree/main/bitcoin_transaction_lifecycle"
+
+[[links]]
+type = "documentation"
+label = "Dataset card (README.md)"
+url = "https://huggingface.co/datasets/dataforge-labs/bitcoin-mempool-lifecycle/blob/main/README.md"
