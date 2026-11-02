@@ -1,0 +1,30 @@
+name = "Bitcoin memory pool transaction capture"
+category = "transactions"
+tags = ["mempool", "transactions", "fees", "mainnet"]
+format = ["text"]
+author = "Zening Zhao, Jinsong Wang (Tianjin University of Technology)"
+license = "CC BY 4.0"
+doi = "10.17632/t2x25md2pj.1"
+description = """
+One row per transaction in a node's mempool: txid and wtxid, size, weight,
+ancestor and descendant fees, entry time, and the decoded inputs and outputs.
+Captured by the authors at Tianjin University of Technology from their own full
+node and published as a SQL Server dump. Useful for mempool and fee modelling;
+it is one node's view, and height is the chain tip at entry, not a confirmation
+height.
+"""
+
+[[links]]
+type = "download"
+label = "Mendeley Data record"
+url = "https://data.mendeley.com/datasets/t2x25md2pj/1"
+
+[[links]]
+type = "download"
+label = "MemoryPool.sql"
+url = "https://data.mendeley.com/public-files/datasets/t2x25md2pj/files/e99767cc-dc0e-4c61-ba6b-d6772c91259a/file_downloaded"
+
+[[links]]
+type = "other"
+label = "Equivalent IEEE DataPort deposit (subscription required)"
+url = "https://ieee-dataport.org/documents/bitcoin-memory-pool-transaction-dataset"
