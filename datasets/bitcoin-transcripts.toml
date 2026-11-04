@@ -1,0 +1,42 @@
+name = "Bitcoin Transcripts"
+category = "development"
+tags = ["archive", "bitcoin-core", "history", "meetings"]
+format = ["text"]
+author = "Bitcoin Transcripts contributors"
+license = "MIT"
+description = """
+One Markdown file per transcribed talk, podcast episode or developer meeting,
+with YAML front matter naming the title, speakers, tags, date, the recording it
+came from and who transcribed it. Volunteers and a machine transcription tool
+produce them from public recordings, and a review app tracks the editing.
+Useful for full-text search of what was said about a protocol change; the text
+is an edited transcription, not verbatim speech.
+"""
+
+[[links]]
+type = "repository"
+url = "https://github.com/bitcointranscripts/bitcointranscripts"
+
+[[links]]
+type = "website"
+url = "https://btctranscripts.com/"
+
+[[links]]
+type = "download"
+label = "master.tar.gz (all transcript files)"
+url = "https://github.com/bitcointranscripts/bitcointranscripts/archive/refs/heads/master.tar.gz"
+
+[[links]]
+type = "documentation"
+label = "Front matter fields and directory layout (README)"
+url = "https://github.com/bitcointranscripts/bitcointranscripts/blob/master/README.md"
+
+[[links]]
+type = "documentation"
+label = "STYLE.md (transcription style guide)"
+url = "https://github.com/bitcointranscripts/bitcointranscripts/blob/master/STYLE.md"
+
+[[links]]
+type = "other"
+label = "Raw machine transcription output and metadata"
+url = "https://github.com/bitcointranscripts/bitcointranscripts-metadata"
