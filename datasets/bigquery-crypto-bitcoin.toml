@@ -1,0 +1,29 @@
+name = "Bitcoin blockchain in BigQuery"
+category = "transactions"
+tags = ["addresses", "blocks", "fees", "mainnet", "transactions"]
+format = ["csv", "jsonl", "parquet"]
+author = "Google Cloud Public Dataset Program"
+license = "Not specified (bitcoin-etl extraction code is MIT)"
+description = """
+Two BigQuery tables covering the chain, one row per block and one per
+transaction, with each transaction's inputs and outputs nested alongside their
+addresses, script, type and value, plus views that flatten them. Google's
+public dataset program hosts it, loaded by the open source Blockchain ETL
+pipeline from a node. Useful for SQL analysis of the whole chain without
+running an indexer; querying needs a Google Cloud project.
+"""
+
+[[links]]
+type = "repository"
+label = "bitcoin-etl (extraction code)"
+url = "https://github.com/blockchain-etl/bitcoin-etl"
+
+[[links]]
+type = "website"
+label = "Dataset listing in Google Cloud Marketplace"
+url = "https://console.cloud.google.com/marketplace/product/bitcoin/crypto-bitcoin"
+
+[[links]]
+type = "other"
+label = "Announcement of the crypto_bitcoin dataset"
+url = "https://cloud.google.com/blog/products/data-analytics/introducing-six-new-cryptocurrencies-in-bigquery-public-datasets-and-how-to-analyze-them"
